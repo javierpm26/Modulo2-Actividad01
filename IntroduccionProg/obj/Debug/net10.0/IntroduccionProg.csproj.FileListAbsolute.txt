@@ -1,0 +1,14 @@
+C:\Users\Reserva7\Desktop\IntroduccionProg\bin\Debug\net10.0\IntroduccionProg.exe
+C:\Users\Reserva7\Desktop\IntroduccionProg\bin\Debug\net10.0\IntroduccionProg.deps.json
+C:\Users\Reserva7\Desktop\IntroduccionProg\bin\Debug\net10.0\IntroduccionProg.runtimeconfig.json
+C:\Users\Reserva7\Desktop\IntroduccionProg\bin\Debug\net10.0\IntroduccionProg.dll
+C:\Users\Reserva7\Desktop\IntroduccionProg\bin\Debug\net10.0\IntroduccionProg.pdb
+C:\Users\Reserva7\Desktop\IntroduccionProg\obj\Debug\net10.0\IntroduccionProg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Reserva7\Desktop\IntroduccionProg\obj\Debug\net10.0\IntroduccionProg.AssemblyInfoInputs.cache
+C:\Users\Reserva7\Desktop\IntroduccionProg\obj\Debug\net10.0\IntroduccionProg.AssemblyInfo.cs
+C:\Users\Reserva7\Desktop\IntroduccionProg\obj\Debug\net10.0\IntroduccionProg.csproj.CoreCompileInputs.cache
+C:\Users\Reserva7\Desktop\IntroduccionProg\obj\Debug\net10.0\IntroduccionProg.dll
+C:\Users\Reserva7\Desktop\IntroduccionProg\obj\Debug\net10.0\refint\IntroduccionProg.dll
+C:\Users\Reserva7\Desktop\IntroduccionProg\obj\Debug\net10.0\IntroduccionProg.pdb
+C:\Users\Reserva7\Desktop\IntroduccionProg\obj\Debug\net10.0\IntroduccionProg.genruntimeconfig.cache
+C:\Users\Reserva7\Desktop\IntroduccionProg\obj\Debug\net10.0\ref\IntroduccionProg.dll
