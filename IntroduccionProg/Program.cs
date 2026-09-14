@@ -243,6 +243,44 @@ Console.WriteLine($"¿Es el saldo suficiente y el precio mayor que 0? {saldoPrec
 
 
 
+// NIVEL 7 - Medias y conversiones
+
+//Ejercicio 16 - Media de 3 notas
+
+decimal nota1 = 0;
+decimal nota2 = 0;
+decimal nota3 = 0;
+
+Console.WriteLine("Nota 1: ");
+nota1 = decimal.Parse(Console.ReadLine() ?? "");
+
+Console.WriteLine("Nota 2: ");
+nota2 = decimal.Parse(Console.ReadLine() ?? "");
+
+Console.WriteLine("Nota 3: ");
+nota3 = decimal.Parse(Console.ReadLine() ?? "");
+
+//Mostrar las tres notas
+Console.WriteLine($"Las tres notas introducidas son {nota1}, {nota2}, {nota3}");
+
+//La suma
+decimal sumaNotas = nota1 + nota2 + nota3;
+Console.WriteLine($"La suma de las tres notas es {sumaNotas}");
+
+//La media
+decimal mediaNotas = sumaNotas / 3;
+Console.WriteLine($"La media de las tres notas es {mediaNotas}");
+
+//¿La media es mayor o igual a 5
+bool mayorIgual = mediaNotas >= 5;
+Console.WriteLine($"¿La media de las notas es mayor o igual a 5?: {mayorIgual} ");
+
+
+
+
+
+
+
 
 
 
