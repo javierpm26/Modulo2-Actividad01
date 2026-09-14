@@ -154,5 +154,31 @@ tempCelsius = double.Parse(Console.ReadLine() ?? "");
 Console.WriteLine($"La temperatura introducida en grados Fahrenheit es de {tempCelsius * 9 / 5 + 32} grados.");
 
 
+// NIVEL 5 - COMPARACIONES
+
+// Ejercicio 12 - Mayor o menor
+
+int numero1 = 0;
+int numero2 = 0;
+
+Console.WriteLine("Introduce el primer número entero: ");
+numero1 = int.Parse(Console.ReadLine() ?? "");
+
+Console.WriteLine("Ahora introduce el segundo número entero: ");
+numero2 = int.Parse(Console.ReadLine() ?? "");
+
+bool primeroMayor = numero1 > numero2;
+Console.WriteLine($"{primeroMayor}");
+
+bool primeroMenor = numero1 < numero2;
+Console.WriteLine($"{primeroMenor}");
+
+bool sonIguales = numero1 == numero2;
+Console.WriteLine($"{sonIguales}");
+
+bool sonDiferentes = numero1 != numero2;
+Console.WriteLine($"{sonDiferentes}");
+
+
 
 
