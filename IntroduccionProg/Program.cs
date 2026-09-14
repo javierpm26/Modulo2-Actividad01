@@ -344,6 +344,39 @@ Console.WriteLine($"Euros sobrantes: {eurosSobrantes}");
 
 
 
+// Ejercicio 19 - Conversión y operaciones
+
+decimal precioSinIVA = 0;
+double porcentajeIVA = 0.0;
+
+// Le pedimos al usuario el precio sin el IVA
+Console.WriteLine("Introduce un precio sin IVA: ");
+precioSinIVA = decimal.Parse(Console.ReadLine() ?? "");
+
+// Ahora se le pide al usuario que introduzca el porcentaje de IVA que quiere aplicarle
+Console.WriteLine("Introduce porcentaje de IVA a aplicar: ");
+porcentajeIVA = double.Parse(Console.ReadLine() ?? "");
+
+// Paso a decimal el porcentaje por que no se puede hacer una operación de * con un double y un decimal
+
+decimal cantidadIVA = precioSinIVA * ((decimal)porcentajeIVA / 100);
+
+// Ahora ya por fin se puede calcular el precio total
+
+decimal precioTotal = precioSinIVA + cantidadIVA;
+
+Console.WriteLine($"El precio original es: {precioSinIVA}");
+
+Console.WriteLine($"El IVA es: {porcentajeIVA}");
+
+Console.WriteLine($"El precio final es: {precioTotal}");
+
+
+
+
+
+
+
 
 
 
