@@ -278,6 +278,43 @@ Console.WriteLine($"¿La media de las notas es mayor o igual a 5?: {mayorIgual} 
 
 
 
+// Ejercicio 17 - Media de cuatro números
+
+decimal nEnt1 = 0;
+decimal nEnt2 = 0;
+decimal nEnt3 = 0;
+decimal nEnt4 = 0;
+
+Console.WriteLine("Introduce el primer numero: ");
+nEnt1 = decimal.Parse(Console.ReadLine() ?? "");
+
+Console.WriteLine("Introduce el segundo numero: ");
+nEnt2 = decimal.Parse(Console.ReadLine() ?? "");
+
+Console.WriteLine("Introduce el tercer numero: ");
+nEnt3 = decimal.Parse(Console.ReadLine() ?? "");
+
+Console.WriteLine("Introduce el cuarto numero: ");
+nEnt4 = decimal.Parse(Console.ReadLine() ?? "");
+
+
+// La suma de los cuatro números
+decimal sumaTotal = nEnt1 + nEnt2 + nEnt3 + nEnt4;
+Console.WriteLine($"La suma de los cuatro números es {sumaTotal}");
+
+// La media de los cuatro números
+decimal media = sumaTotal / 4;
+Console.WriteLine($"La media de los cuatro números es {media}");
+
+// El resto de la suma
+decimal restoSuma = sumaTotal % 4;
+Console.WriteLine($"El resto de la suma es: {restoSuma}");
+
+
+
+
+
+
 
 
 
