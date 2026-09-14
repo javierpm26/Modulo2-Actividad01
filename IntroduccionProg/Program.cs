@@ -106,3 +106,18 @@ Console.WriteLine($"{minutos} minutos son {horas} horas");
 
 int minRestantes = minutos % 60;
 Console.WriteLine($"Minutos restantes {minRestantes}");
+
+//NIVEL 4 - OPERACIONES CON DECIMALES
+
+// Ejercicio 9 - Área de un rectángulo
+double baseR = 0.0;
+double alturaR = 0.0;
+
+Console.WriteLine("Introduce la base de tu rectángulo: ");
+baseR = double.Parse(Console.ReadLine() ?? "");
+
+Console.WriteLine("Introduce la altura de tu rectángulo: ");
+alturaR = double.Parse(Console.ReadLine() ?? "");
+
+//área = base * altura
+Console.WriteLine($"El área de tu rectángulo es {baseR * alturaR}.");
