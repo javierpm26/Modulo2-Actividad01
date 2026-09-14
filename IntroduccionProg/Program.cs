@@ -1,8 +1,6 @@
 ﻿/*//NIVEL 1 - MOSTRAR INFORMACIÓN
 
 //Ejercicio 1 - Presentación
-using System.Diagnostics.CodeAnalysis;
-using System.Reflection;
 
 string nombre = "Beatriz";
 const string CIUDAD = "Socuéllamos";
@@ -195,7 +193,7 @@ menor5 = notaAlum < 5;
 Console.WriteLine($"¿Es la nota del alumno menor que 5? {menor5}");
 
 igual10 = notaAlum == 10;
-Console.WriteLine($"¿Es la nota del alumno igual a 10? {igual10}");*/
+Console.WriteLine($"¿Es la nota del alumno igual a 10? {igual10}");
 
 
 
@@ -218,9 +216,30 @@ bool primeraCondicion = edad4 >= 18 && entradasDisponibles >=1;
 Console.WriteLine($"{primeraCondicion}");
 
 primeraCondicion = edad4 >= 18 || entradasDisponibles >= 1;
-Console.WriteLine($"{primeraCondicion}");
+Console.WriteLine($"{primeraCondicion}");*/
 
+// Ejercicio 15 - Cuenta bancaria
+double saldoDisp = 0;
+double precioProd2 = 0;
 
+bool saldoSufi = false;
+bool saldoInsufi = false;
+bool saldoPrecio = false;
+
+Console.WriteLine("Introduce el saldo disponible: ");
+saldoDisp = double.Parse(Console.ReadLine() ?? "");
+
+Console.WriteLine("Introduce el precio del producto a comprar: ");
+precioProd2 = double.Parse(Console.ReadLine() ?? "");
+
+saldoSufi = saldoDisp >= precioProd2;
+Console.WriteLine($"¿Es el saldo suficiente para comprar el producto? {saldoSufi}");
+
+saldoInsufi = saldoDisp <= precioProd2;
+Console.WriteLine($"¿Es el saldo insuficiente para comprar el producto? {saldoInsufi}");
+
+saldoPrecio = saldoSufi && precioProd2 > 0;
+Console.WriteLine($"¿Es el saldo suficiente y el precio mayor que 0? {saldoPrecio}");
 
 
 
