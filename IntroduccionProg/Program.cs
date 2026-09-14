@@ -21,6 +21,8 @@ Console.WriteLine($"Hola me llamo {nombre2}, y tengo {edad2} años. Mido {altura
 
 Console.WriteLine($"¿Soy estudiante?{estudiante}");
 
+//NIVEL 2 - PEDIR DATOS
+
 //Ejercicio 3 - Saludo
 string nombre3 = "";
 string ciudad2 = "";
@@ -39,3 +41,16 @@ int edad3 = 0;
 Console.WriteLine("Dime tu edad");
 edad3 = int.Parse(Console.ReadLine() ?? "");
 Console.WriteLine($"Ok, tu edad es {edad3}");
+
+//Ejercicio 5 - Producto
+string nombreProd = "";
+double precioProd = 0.0;
+
+Console.WriteLine("Introduce el nombre del producto: ");
+nombreProd = Console.ReadLine() ?? "";
+Console.WriteLine("Introduce el precio del producto: ");
+precioProd = double.Parse(Console.ReadLine() ?? "");
+//Hay que meter siempre el número en consola cuando lo pida o dará error al quedar como null e intentar convertir el string a double
+//Para introducir decimales por consola, utilizar ,
+
+Console.WriteLine($"El producto introducido es {nombreProd} con un valor de {precioProd} euros.");
