@@ -2,6 +2,7 @@
 
 //Ejercicio 1 - Presentación
 using System.Diagnostics.CodeAnalysis;
+using System.Reflection;
 
 string nombre = "Beatriz";
 const string CIUDAD = "Socuéllamos";
@@ -121,3 +122,26 @@ alturaR = double.Parse(Console.ReadLine() ?? "");
 
 //área = base * altura
 Console.WriteLine($"El área de tu rectángulo es {baseR * alturaR}.");
+
+
+
+// Ejercicio 10 - Precio Final
+
+decimal productA = 0;
+decimal productB = 0;
+
+Console.WriteLine("Producto A: ");
+productA = decimal.Parse(Console.ReadLine() ?? "");
+
+Console.WriteLine("Producto B: ");
+productB = decimal.Parse(Console.ReadLine() ?? "");
+
+ decimal precioTotal = productA + productB;
+Console.WriteLine($"El precio total de los productos {productA} y {productB} es {precioTotal}");
+
+decimal precioMedio = precioTotal / 2;
+Console.WriteLine($"El precio medio de {productA} y {productB} es {precioMedio}");
+
+
+
+
