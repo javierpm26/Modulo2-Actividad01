@@ -216,7 +216,7 @@ bool primeraCondicion = edad4 >= 18 && entradasDisponibles >=1;
 Console.WriteLine($"{primeraCondicion}");
 
 primeraCondicion = edad4 >= 18 || entradasDisponibles >= 1;
-Console.WriteLine($"{primeraCondicion}");*/
+Console.WriteLine($"{primeraCondicion}");
 
 // Ejercicio 15 - Cuenta bancaria
 double saldoDisp = 0;
@@ -308,7 +308,40 @@ Console.WriteLine($"La media de los cuatro números es {media}");
 
 // El resto de la suma
 decimal restoSuma = sumaTotal % 4;
-Console.WriteLine($"El resto de la suma es: {restoSuma}");
+Console.WriteLine($"El resto de la suma es: {restoSuma}");*/
+
+
+
+// NIVEL 8 - RETOS
+
+// Ejercicio 18 - Descomponer una cantidad
+
+int cantidad = 0;
+int billete50 = 0;
+int billete20 = 0;
+int billete10 = 0;
+int eurosSobrantes = 0;
+
+Console.WriteLine("Cantidad: ");
+cantidad = int.Parse(Console.ReadLine() ?? "");
+
+// Con billetes de 50€
+billete50 = cantidad / 50;
+Console.WriteLine($"50€: {billete50} billetes");
+
+// Con billetes de 20€
+billete20 = cantidad / 20;
+Console.WriteLine($"20€: {billete20} billetes");
+
+// Con billetes de 10
+billete10 = cantidad / 10;
+Console.WriteLine($"10€: {billete10} billetes");
+
+// Euros sobrantes
+eurosSobrantes = billete50 + billete20 + billete10 / 3;
+Console.WriteLine($"Euros sobrantes: {eurosSobrantes}");
+
+
 
 
 
