@@ -92,3 +92,17 @@ int numD = int.Parse(Console.ReadLine() ?? "");
 
 Console.WriteLine($"El resultado de la división entre {numC} y {numD} es {numC / numD}.");
 Console.WriteLine($"El resto de la división entre {numC} y {numD} es {numC % numD}.");
+
+
+// Ejercicio 8 - Conversión de minutos
+
+int minutos = 0;
+
+Console.WriteLine("Minutos a convertir a horas");
+minutos = int.Parse(Console.ReadLine() ?? "");
+
+int horas = minutos / 60;
+Console.WriteLine($"{minutos} minutos son {horas} horas");
+
+int minRestantes = minutos % 60;
+Console.WriteLine($"Minutos restantes {minRestantes}");
