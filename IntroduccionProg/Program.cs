@@ -308,7 +308,7 @@ Console.WriteLine($"La media de los cuatro números es {media}");
 
 // El resto de la suma
 decimal restoSuma = sumaTotal % 4;
-Console.WriteLine($"El resto de la suma es: {restoSuma}");*/
+Console.WriteLine($"El resto de la suma es: {restoSuma}");
 
 
 
@@ -369,7 +369,55 @@ Console.WriteLine($"El precio original es: {precioSinIVA}");
 
 Console.WriteLine($"El IVA es: {porcentajeIVA}");
 
-Console.WriteLine($"El precio final es: {precioTotal}");
+Console.WriteLine($"El precio final es: {precioTotal}");*/
+
+
+
+// Ejercicio 20 - Analizador de tres números
+
+int primerNumero = 0; 
+int segundoNumero = 0;
+int tercerNumero = 0;
+
+Console.WriteLine("Primer número: ");
+primerNumero = int.Parse(Console.ReadLine() ?? "");
+
+Console.WriteLine("Segundo número: ");
+segundoNumero = int.Parse(Console.ReadLine() ?? "");
+
+Console.WriteLine("Tercer número: ");
+tercerNumero = int.Parse(Console.ReadLine() ?? "");
+
+// La suma de los tres números
+Console.WriteLine($"Suma: {(primerNumero + segundoNumero + tercerNumero)}");
+
+// La media de los tres números
+Console.WriteLine($"Media: {(primerNumero + segundoNumero + tercerNumero / 3)}");
+
+// Primero mayor que segundo (True or false)
+Console.WriteLine($"Primero mayor que segundo: {(primerNumero > segundoNumero)}");
+
+// Segundo mayor que tercero (True or false)
+Console.WriteLine($"Segundo mayor que tercero: {(segundoNumero > tercerNumero)}");
+
+// Los tres son diferentes (operador lógico and &)
+Console.WriteLine($"Los tres son diferentes: {(primerNumero != segundoNumero && primerNumero != tercerNumero)}");
+
+
+// Están en orden descendente
+
+//
+
+
+
+
+// Resto de la suma entre 3
+Console.WriteLine($"Resto de la suma entre 3: {(primerNumero + segundoNumero + tercerNumero % 3)}");
+
+
+
+
+
 
 
 
