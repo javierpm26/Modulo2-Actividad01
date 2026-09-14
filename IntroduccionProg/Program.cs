@@ -3,6 +3,8 @@
 //Ejercicio 1 - Presentación
 
 
+using System.Diagnostics.CodeAnalysis;
+
 string nombre = "Beatriz";
 const string CIUDAD = "Socuéllamos";
 int edad = 27;
@@ -54,3 +56,29 @@ precioProd = double.Parse(Console.ReadLine() ?? "");
 //Para introducir decimales por consola, utilizar ,
 
 Console.WriteLine($"El producto introducido es {nombreProd} con un valor de {precioProd} euros.");
+
+
+// NIVEL 3 - OPERACIONES SENCILLAS
+
+// Ejercicio 6 - Suma de dos números
+
+int numA =  0;
+int numB = 0;
+
+Console.WriteLine("Numero entero A: ");
+numA = int.Parse(Console.ReadLine() ?? "");
+
+Console.WriteLine("Numero entero B: ");
+numB = int.Parse(Console.ReadLine() ?? "");
+
+// Sumar
+int suma = numA + numB;
+Console.WriteLine($"El resultado de la suma es: {suma}.");
+
+// Resta
+int resta = numA - numB;
+Console.WriteLine($"El resultado de la resta es: {resta}");
+
+// Multiplicación
+int multiplicacion = numA * numB;
+Console.WriteLine($"El resultado de la multiplicación es {multiplicacion}");
