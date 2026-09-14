@@ -21,3 +21,14 @@ Console.WriteLine($"Hola me llamo {nombre2}, y tengo {edad2} años. Mido {altura
 
 Console.WriteLine($"¿Soy estudiante?{estudiante}");
 
+//Ejercicio 3 - Saludo
+string nombre3 = "";
+string ciudad2 = "";
+
+Console.WriteLine("Introduce tu nombre:");
+nombre3 = Console.ReadLine() ?? "";
+
+Console.WriteLine("Introduce tu ciudad:");
+ciudad2 = Console.ReadLine() ?? "";
+
+Console.WriteLine($"Hola, {nombre3}. Tu ciudad, {ciudad2}, es muy bonita.");
