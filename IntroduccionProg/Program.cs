@@ -1,4 +1,4 @@
-﻿//NIVEL 1 - MOSTRAR INFORMACIÓN
+﻿/*//NIVEL 1 - MOSTRAR INFORMACIÓN
 
 //Ejercicio 1 - Presentación
 using System.Diagnostics.CodeAnalysis;
@@ -195,4 +195,36 @@ menor5 = notaAlum < 5;
 Console.WriteLine($"¿Es la nota del alumno menor que 5? {menor5}");
 
 igual10 = notaAlum == 10;
-Console.WriteLine($"¿Es la nota del alumno igual a 10? {igual10}");
+Console.WriteLine($"¿Es la nota del alumno igual a 10? {igual10}");*/
+
+
+
+// NIVEL 6 - OPERADORES LÓGICOS
+
+// Ejercicio 14 - Comprobar condiciones
+
+int edad4 = 0;
+int entradasDisponibles = 0;
+
+Console.WriteLine("14. Edad: ");
+edad4 = int.Parse(Console.ReadLine() ?? "");
+
+Console.WriteLine("14. Entradas disponibles: ");
+entradasDisponibles = int.Parse(Console.ReadLine() ?? "");
+
+
+// Primera condición and (&&) y or (||)
+bool primeraCondicion = edad4 >= 18 && entradasDisponibles >=1;
+Console.WriteLine($"{primeraCondicion}");
+
+primeraCondicion = edad4 >= 18 || entradasDisponibles >= 1;
+Console.WriteLine($"{primeraCondicion}");
+
+
+
+
+
+
+
+
+
