@@ -32,3 +32,10 @@ Console.WriteLine("Introduce tu ciudad:");
 ciudad2 = Console.ReadLine() ?? "";
 
 Console.WriteLine($"Hola, {nombre3}. Tu ciudad, {ciudad2}, es muy bonita.");
+
+
+//Ejercicio 4 - Edad
+int edad3 = 0;
+Console.WriteLine("Dime tu edad");
+edad3 = int.Parse(Console.ReadLine() ?? "");
+Console.WriteLine($"Ok, tu edad es {edad3}");
