@@ -1,8 +1,6 @@
 ﻿//NIVEL 1 - MOSTRAR INFORMACIÓN
 
 //Ejercicio 1 - Presentación
-
-
 using System.Diagnostics.CodeAnalysis;
 
 string nombre = "Beatriz";
@@ -61,7 +59,6 @@ Console.WriteLine($"El producto introducido es {nombreProd} con un valor de {pre
 // NIVEL 3 - OPERACIONES SENCILLAS
 
 // Ejercicio 6 - Suma de dos números
-
 int numA =  0;
 int numB = 0;
 
@@ -82,3 +79,16 @@ Console.WriteLine($"El resultado de la resta es: {resta}");
 // Multiplicación
 int multiplicacion = numA * numB;
 Console.WriteLine($"El resultado de la multiplicación es {multiplicacion}");
+
+//Ejercicio 7 - División y resto
+
+//División
+Console.WriteLine("Introduce un número: ");
+int numC = int.Parse(Console.ReadLine() ?? "");
+
+//Resto
+Console.WriteLine("Introduce otro número: ");
+int numD = int.Parse(Console.ReadLine() ?? "");
+
+Console.WriteLine($"El resultado de la división entre {numC} y {numD} es {numC / numD}.");
+Console.WriteLine($"El resto de la división entre {numC} y {numD} es {numC % numD}.");
