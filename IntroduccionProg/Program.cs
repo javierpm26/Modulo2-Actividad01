@@ -142,6 +142,17 @@ Console.WriteLine($"El precio total de los productos {productA} y {productB} es 
 decimal precioMedio = precioTotal / 2;
 Console.WriteLine($"El precio medio de {productA} y {productB} es {precioMedio}");
 
+// Ejercicio 11 - Conversión de temperatura
+
+double tempCelsius = 0.0;
+
+Console.WriteLine("Introduce la temperatura en grados Celsius: ");
+tempCelsius = double.Parse(Console.ReadLine() ?? "");
+
+//F = C * 9 / 5 + 32
+
+Console.WriteLine($"La temperatura introducida en grados Fahrenheit es de {tempCelsius * 9 / 5 + 32} grados.");
+
 
 
 
