@@ -179,6 +179,20 @@ Console.WriteLine($"{sonIguales}");
 bool sonDiferentes = numero1 != numero2;
 Console.WriteLine($"{sonDiferentes}");
 
+// Ejercicio 13 - Nota de un alumno
+decimal notaAlum = 0;
+bool mayorIgual5 = false;
+bool menor5 = false;
+bool igual10 = false;
 
+Console.WriteLine("Introduce la nota del alumno: ");
+notaAlum = decimal.Parse(Console.ReadLine() ?? "");
 
+mayorIgual5 = notaAlum >= 5;
+Console.WriteLine($"¿Es la nota del alumno mayor o igual que 5? {mayorIgual5}");
 
+menor5 = notaAlum < 5;
+Console.WriteLine($"¿Es la nota del alumno menor que 5? {menor5}");
+
+igual10 = notaAlum == 10;
+Console.WriteLine($"¿Es la nota del alumno igual a 10? {igual10}");
