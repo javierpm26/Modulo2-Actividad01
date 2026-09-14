@@ -1,7 +1,6 @@
-﻿/*//NIVEL 1 - MOSTRAR INFORMACIÓN
+﻿//NIVEL 1 - MOSTRAR INFORMACIÓN
 
 //Ejercicio 1 - Presentación
-
 string nombre = "Beatriz";
 const string CIUDAD = "Socuéllamos";
 int edad = 27;
@@ -19,6 +18,7 @@ bool estudiante = true;
 Console.WriteLine($"Hola me llamo {nombre2}, y tengo {edad2} años. Mido {altura} metros");
 
 Console.WriteLine($"¿Soy estudiante?{estudiante}");
+
 
 //NIVEL 2 - PEDIR DATOS
 
@@ -80,7 +80,6 @@ int multiplicacion = numA * numB;
 Console.WriteLine($"El resultado de la multiplicación es {multiplicacion}");
 
 //Ejercicio 7 - División y resto
-
 //División
 Console.WriteLine("Introduce un número: ");
 int numC = int.Parse(Console.ReadLine() ?? "");
@@ -94,7 +93,6 @@ Console.WriteLine($"El resto de la división entre {numC} y {numD} es {numC % nu
 
 
 // Ejercicio 8 - Conversión de minutos
-
 int minutos = 0;
 
 Console.WriteLine("Minutos a convertir a horas");
@@ -105,6 +103,7 @@ Console.WriteLine($"{minutos} minutos son {horas} horas");
 
 int minRestantes = minutos % 60;
 Console.WriteLine($"Minutos restantes {minRestantes}");
+
 
 //NIVEL 4 - OPERACIONES CON DECIMALES
 
@@ -122,9 +121,7 @@ alturaR = double.Parse(Console.ReadLine() ?? "");
 Console.WriteLine($"El área de tu rectángulo es {baseR * alturaR}.");
 
 
-
 // Ejercicio 10 - Precio Final
-
 decimal productA = 0;
 decimal productB = 0;
 
@@ -141,7 +138,6 @@ decimal precioMedio = precioTotal / 2;
 Console.WriteLine($"El precio medio de {productA} y {productB} es {precioMedio}");
 
 // Ejercicio 11 - Conversión de temperatura
-
 double tempCelsius = 0.0;
 
 Console.WriteLine("Introduce la temperatura en grados Celsius: ");
@@ -155,7 +151,6 @@ Console.WriteLine($"La temperatura introducida en grados Fahrenheit es de {tempC
 // NIVEL 5 - COMPARACIONES
 
 // Ejercicio 12 - Mayor o menor
-
 int numero1 = 0;
 int numero2 = 0;
 
@@ -177,6 +172,7 @@ Console.WriteLine($"{sonIguales}");
 bool sonDiferentes = numero1 != numero2;
 Console.WriteLine($"{sonDiferentes}");
 
+
 // Ejercicio 13 - Nota de un alumno
 decimal notaAlum = 0;
 bool mayorIgual5 = false;
@@ -196,11 +192,9 @@ igual10 = notaAlum == 10;
 Console.WriteLine($"¿Es la nota del alumno igual a 10? {igual10}");
 
 
-
 // NIVEL 6 - OPERADORES LÓGICOS
 
 // Ejercicio 14 - Comprobar condiciones
-
 int edad4 = 0;
 int entradasDisponibles = 0;
 
@@ -217,6 +211,7 @@ Console.WriteLine($"{primeraCondicion}");
 
 primeraCondicion = edad4 >= 18 || entradasDisponibles >= 1;
 Console.WriteLine($"{primeraCondicion}");
+
 
 // Ejercicio 15 - Cuenta bancaria
 double saldoDisp = 0;
@@ -242,11 +237,9 @@ saldoPrecio = saldoSufi && precioProd2 > 0;
 Console.WriteLine($"¿Es el saldo suficiente y el precio mayor que 0? {saldoPrecio}");
 
 
-
-// NIVEL 7 - Medias y conversiones
+// NIVEL 7 - MEDIAS Y CONVERSIONES
 
 //Ejercicio 16 - Media de 3 notas
-
 decimal nota1 = 0;
 decimal nota2 = 0;
 decimal nota3 = 0;
@@ -276,76 +269,73 @@ bool mayorIgual = mediaNotas >= 5;
 Console.WriteLine($"¿La media de las notas es mayor o igual a 5?: {mayorIgual} ");
 
 
-
-
 // Ejercicio 17 - Media de cuatro números
+int numEnt1 = 0;
+int numEnt2 = 0;
+int numEnt3 = 0;
+int numEnt4 = 0;
 
-decimal nEnt1 = 0;
-decimal nEnt2 = 0;
-decimal nEnt3 = 0;
-decimal nEnt4 = 0;
+Console.WriteLine("Introduce el primer número: ");
+numEnt1 = int.Parse(Console.ReadLine() ?? "");
 
-Console.WriteLine("Introduce el primer numero: ");
-nEnt1 = decimal.Parse(Console.ReadLine() ?? "");
+Console.WriteLine("Introduce el segundo número: ");
+numEnt2 = int.Parse(Console.ReadLine() ?? "");
 
-Console.WriteLine("Introduce el segundo numero: ");
-nEnt2 = decimal.Parse(Console.ReadLine() ?? "");
+Console.WriteLine("Introduce el tercer número: ");
+numEnt3 = int.Parse(Console.ReadLine() ?? "");
 
-Console.WriteLine("Introduce el tercer numero: ");
-nEnt3 = decimal.Parse(Console.ReadLine() ?? "");
-
-Console.WriteLine("Introduce el cuarto numero: ");
-nEnt4 = decimal.Parse(Console.ReadLine() ?? "");
+Console.WriteLine("Introduce el cuarto número: ");
+numEnt4 = int.Parse(Console.ReadLine() ?? "");
 
 
 // La suma de los cuatro números
-decimal sumaTotal = nEnt1 + nEnt2 + nEnt3 + nEnt4;
+int sumaTotal = numEnt1 + numEnt2 + numEnt3 + numEnt4;
 Console.WriteLine($"La suma de los cuatro números es {sumaTotal}");
 
 // La media de los cuatro números
-decimal media = sumaTotal / 4;
-Console.WriteLine($"La media de los cuatro números es {media}");
+decimal mediaNum = (decimal)sumaTotal / 4;
+Console.WriteLine($"La media de los cuatro números es {mediaNum}");
 
-// El resto de la suma
-decimal restoSuma = sumaTotal % 4;
-Console.WriteLine($"El resto de la suma es: {restoSuma}");
-
+// El resto de la media de los cuatro números
+int restoMedia = sumaTotal % 4;
+Console.WriteLine($"El resto de la media es: {restoMedia}");
 
 
 // NIVEL 8 - RETOS
 
 // Ejercicio 18 - Descomponer una cantidad
-
-int cantidad = 0;
-int billete50 = 0;
-int billete20 = 0;
-int billete10 = 0;
+int cantidadInicial = 0;
+int billetes50 = 0;
+int billetes20 = 0;
+int billetes10 = 0;
+int restoDinero = 0;
 int eurosSobrantes = 0;
 
-Console.WriteLine("Cantidad: ");
-cantidad = int.Parse(Console.ReadLine() ?? "");
+Console.WriteLine("Cantidad de dinero inicial: ");
+cantidadInicial = int.Parse(Console.ReadLine() ?? "");
 
 // Con billetes de 50€
-billete50 = cantidad / 50;
-Console.WriteLine($"50€: {billete50} billetes");
+billetes50 = cantidadInicial / 50;
+Console.WriteLine($"50€: {billetes50} billetes");
+restoDinero = cantidadInicial - (50 * billetes50);
+Console.WriteLine($"Me han sobrado {restoDinero} euros al repartir.");
 
 // Con billetes de 20€
-billete20 = cantidad / 20;
-Console.WriteLine($"20€: {billete20} billetes");
+billetes20 = restoDinero / 20;
+Console.WriteLine($"20€: {billetes20} billetes");
+restoDinero = restoDinero - (20 * billetes20);
+Console.WriteLine($"Me han sobrado {restoDinero} euros al repartir.");
 
 // Con billetes de 10
-billete10 = cantidad / 10;
-Console.WriteLine($"10€: {billete10} billetes");
+billetes10 = restoDinero / 10;
+Console.WriteLine($"10€: {billetes10} billetes");
 
 // Euros sobrantes
-eurosSobrantes = billete50 + billete20 + billete10 / 3;
+eurosSobrantes = cantidadInicial - (billetes50 * 50 + billetes20 * 20 + billetes10 * 10);
 Console.WriteLine($"Euros sobrantes: {eurosSobrantes}");
 
 
-
-
 // Ejercicio 19 - Conversión y operaciones
-
 decimal precioSinIVA = 0;
 double porcentajeIVA = 0.0;
 
@@ -363,18 +353,16 @@ decimal cantidadIVA = precioSinIVA * ((decimal)porcentajeIVA / 100);
 
 // Ahora ya por fin se puede calcular el precio total
 
-decimal precioTotal = precioSinIVA + cantidadIVA;
+decimal precioTotal2 = precioSinIVA + cantidadIVA;
 
 Console.WriteLine($"El precio original es: {precioSinIVA}");
 
 Console.WriteLine($"El IVA es: {porcentajeIVA}");
 
-Console.WriteLine($"El precio final es: {precioTotal}");*/
-
+Console.WriteLine($"El precio final es: {precioTotal2}");
 
 
 // Ejercicio 20 - Analizador de tres números
-
 int primerNumero = 0; 
 int segundoNumero = 0;
 int tercerNumero = 0;
@@ -389,30 +377,28 @@ Console.WriteLine("Tercer número: ");
 tercerNumero = int.Parse(Console.ReadLine() ?? "");
 
 // La suma de los tres números
-Console.WriteLine($"Suma: {(primerNumero + segundoNumero + tercerNumero)}");
+Console.WriteLine($"Suma: {primerNumero + segundoNumero + tercerNumero}");
 
 // La media de los tres números
-Console.WriteLine($"Media: {(primerNumero + segundoNumero + tercerNumero / 3)}");
+Console.WriteLine($"Media: {(decimal)(primerNumero + segundoNumero + tercerNumero) / 3}");
 
 // Primero mayor que segundo (True or false)
-Console.WriteLine($"Primero mayor que segundo: {(primerNumero > segundoNumero)}");
+Console.WriteLine($"¿Es {primerNumero} mayor que {segundoNumero}?: {primerNumero > segundoNumero}");
 
 // Segundo mayor que tercero (True or false)
-Console.WriteLine($"Segundo mayor que tercero: {(segundoNumero > tercerNumero)}");
+Console.WriteLine($"¿Es {segundoNumero} mayor que {tercerNumero}?: {segundoNumero > tercerNumero}");
 
-// Los tres son diferentes (operador lógico and &)
-Console.WriteLine($"Los tres son diferentes: {(primerNumero != segundoNumero && primerNumero != tercerNumero)}");
+// Los tres números son iguales
+Console.WriteLine($"¿Los tres números son iguales?: {primerNumero == segundoNumero && primerNumero == tercerNumero}");
 
+// Los tres números son diferentes (operador lógico and &)
+Console.WriteLine($"¿Los tres números son diferentes?: {primerNumero != segundoNumero && segundoNumero != tercerNumero && primerNumero != tercerNumero}");
 
-// Están en orden descendente
-
-//
-
-
-
+// ¿Están en orden descendente?
+Console.WriteLine($"¿Los números están en orden descendente?: {primerNumero > segundoNumero && segundoNumero > tercerNumero}");
 
 // Resto de la suma entre 3
-Console.WriteLine($"Resto de la suma entre 3: {(primerNumero + segundoNumero + tercerNumero % 3)}");
+Console.WriteLine($"Resto de la suma entre 3: {(primerNumero + segundoNumero + tercerNumero) % 3}");
 
 
 
