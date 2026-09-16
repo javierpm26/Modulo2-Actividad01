@@ -466,11 +466,20 @@ else
 for (int i = 0; i <= 10; i++)
 {
     Console.WriteLine($"{i}");
-}*/
+}
 
 
 // Ejercicio 21 - Números pares
 for (int i = 2; i <= 20; i += 2)
 {
     Console.WriteLine($"{i}");
+}*/
+
+
+// Ejercicio 22 - Cuenta atrás
+
+for (int i = 10; i > 0; i--)
+{
+    Console.WriteLine(i);
 }
+
