@@ -549,7 +549,7 @@ while (numUser != 0)
     sumaTotal = numUser + sumaTotal;
 }
 
-Console.WriteLine($"La suma total de los valores introducidos es {sumaTotal}\nSaliendo del programa...");*/
+Console.WriteLine($"La suma total de los valores introducidos es {sumaTotal}\nSaliendo del programa...");
 
 
 
@@ -566,4 +566,20 @@ do
     Console.WriteLine("Contraseña incorrecta.");
 }while(contrasena2 != contrasenaCorrecta2);
 
-Console.WriteLine("Contraseña correcta.");
+Console.WriteLine("Contraseña correcta.");*/
+
+
+// Ejercicio 30 - Menú repetitivo
+
+int userOption = 0;
+
+do
+{
+    Console.WriteLine("Selecciona una opción de la lista: ");
+    Console.WriteLine("1. Saludar\n2. Mostrar fecha\n3. Salir\n");
+    userOption = int.Parse(Console.ReadLine() ?? "");
+} while (userOption != 3);
+
+
+
+
