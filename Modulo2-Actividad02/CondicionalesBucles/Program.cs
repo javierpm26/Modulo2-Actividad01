@@ -1,7 +1,7 @@
 ﻿// NIVEL 1 - IF
 
 // Ejercicio 1 - Mayor de edad
-Console.WriteLine("Introduce tu edad: ");
+/*Console.WriteLine("Introduce tu edad: ");
 int edad = int.Parse(Console.ReadLine() ?? "");
 
 if (edad >= 18)
@@ -226,4 +226,35 @@ switch (numDia)
     default:
         Console.WriteLine("Día no válido");
         break;
+}*/
+
+
+// Ejercicio 12 - Menú
+
+int opcionUsuario = 0;
+
+Console.WriteLine("1. Crear\n2. Consultar\n3. Modificar\n4. Eliminar");
+
+Console.Write("Escribe una opción:");
+opcionUsuario = int.Parse(Console.ReadLine() ?? "");
+
+
+switch (opcionUsuario)
+{
+    case 1:
+        Console.WriteLine("Has elegido CREAR");
+        break;
+    case 2:
+        Console.WriteLine("Has elegido CONSULTAR");
+        break;
+    case 3:
+        Console.WriteLine("Has elegido MODIFICAR");
+        break;
+    case 4:
+        Console.WriteLine("Has elegido ELIMINAR");
+        break;
+    default:
+        Console.WriteLine("¡OPCIÓN NO VÁLIDA!");
+        break;
 }
+
