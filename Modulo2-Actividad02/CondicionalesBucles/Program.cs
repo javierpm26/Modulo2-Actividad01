@@ -456,15 +456,21 @@ else if (dato3 is double)
 else
 {
     Console.WriteLine("La variable object dato3 es de tipo desconocido.");
-}*/
+}
+
 
 
 // NIVEL 7 - Bucle For
 
 // Ejercicio 20 - Del 1 al 10
-
 for (int i = 0; i <= 10; i++)
 {
     Console.WriteLine($"{i}");
-}
+}*/
 
+
+// Ejercicio 21 - Números pares
+for (int i = 2; i <= 20; i += 2)
+{
+    Console.WriteLine($"{i}");
+}
