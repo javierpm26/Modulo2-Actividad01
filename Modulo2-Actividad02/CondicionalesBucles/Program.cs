@@ -611,7 +611,7 @@ while(contArray < numeros.Length)
 {
     Console.WriteLine(numeros[contArray]);
     contArray++;
-}*/
+}
 
 
 
@@ -638,4 +638,25 @@ for (int i = 0; i < listaNumeros.Length; i++)
 }
 
 Console.WriteLine("El número mayor es: " + numeroMayor);
-Console.WriteLine("El número menor es: " + numeroMenor);
+Console.WriteLine("El número menor es: " + numeroMenor);*/
+
+
+
+
+// Ejercicio 35 - Suma y media
+decimal[] listaNotas = { 4.5m, 5m, 7m, 8.25m, 10m, 1.25m, 6m };
+
+decimal  sumaNotas = 0m;
+decimal mediaNotas = 0m;
+
+foreach (decimal nota in listaNotas)
+{
+    sumaNotas += nota;
+    mediaNotas = (sumaNotas / listaNotas.Length);
+    Console.WriteLine($"Las notas obtenidas son {nota}");
+
+}
+
+Console.WriteLine($"La suma de todas las notas es: {sumaNotas}");
+
+Console.WriteLine($"La media de las notas es: {mediaNotas}");
