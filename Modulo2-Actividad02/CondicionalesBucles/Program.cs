@@ -460,7 +460,7 @@ else
 
 
 
-// NIVEL 7 - Bucle For
+// NIVEL 7 - FOR
 
 // Ejercicio 20 - Del 1 al 10
 for (int i = 0; i <= 10; i++)
@@ -473,13 +473,22 @@ for (int i = 0; i <= 10; i++)
 for (int i = 2; i <= 20; i += 2)
 {
     Console.WriteLine($"{i}");
-}*/
+}
 
 
 // Ejercicio 22 - Cuenta atrás
-
 for (int i = 10; i > 0; i--)
 {
     Console.WriteLine(i);
+}*/
+
+
+// Ejercicio 23 - Tabla de multiplicar
+Console.WriteLine("Introduce qué tabla de multiplicar quieres ver: ");
+int tablaMulti = int.Parse(Console.ReadLine() ?? "");
+
+for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine($"{tablaMulti} x {i} = {tablaMulti*i}");
 }
 
