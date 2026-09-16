@@ -708,6 +708,18 @@ Console.WriteLine($"Aprobados: {alumnosAprobados}");
 Console.WriteLine($"Suspensos: {alumnosSuspensos}"); */
 
 
+// Ejercicio 38 - Números pares
+int[] numerosEnteros = {1,2,5,7,6,10,22,29,30};
+
+for (int i = 0; i<numerosEnteros.Length; i++)
+{
+    if (numerosEnteros[i] % 2 == 0)
+    {
+        Console.WriteLine($"Número par: {numerosEnteros[i]}");
+    }
+}
+
+
 
 
 
