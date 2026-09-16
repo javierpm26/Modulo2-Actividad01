@@ -617,17 +617,25 @@ while(contArray < numeros.Length)
 
 // Ejercicio 34 - Mayor y menor
 int[] listaNumeros = { 26, 14, 93, 99, 1 };
-int numeroMenor = 0;
-int numeroMayor = 0;
 
+
+int numeroMenor = listaNumeros[0]; // Inicio las variables con el valor del primer valor del array, sobre todo para que el número menor se compare con algo
+int numeroMayor = listaNumeros[0]; // Si alguna no se inicia con la posición del array da este error del compilador: CS9174
 
 for (int i = 0; i < listaNumeros.Length; i++)
 {
-   if (listaNumeros[i] > numeroMayor)
+    // Comprobar para sacar el mayor
+    if (listaNumeros[i] > numeroMayor)
     {
         numeroMayor = listaNumeros[i];
     }
 
+    // Sacar el menor
+    if (listaNumeros[i] < numeroMenor)
+    {
+        numeroMenor = listaNumeros[i];
+    }
 }
 
-Console.WriteLine(numeroMayor);
+Console.WriteLine("El número mayor es: " + numeroMayor);
+Console.WriteLine("El número menor es: " + numeroMenor);
