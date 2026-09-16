@@ -131,7 +131,7 @@ productA = decimal.Parse(Console.ReadLine() ?? "");
 Console.WriteLine("Producto B: ");
 productB = decimal.Parse(Console.ReadLine() ?? "");
 
- decimal precioTotal = productA + productB;
+decimal precioTotal = productA + productB;
 Console.WriteLine($"El precio total de los productos {productA} y {productB} es {precioTotal}");
 
 decimal precioMedio = precioTotal / 2;
@@ -196,21 +196,41 @@ Console.WriteLine($"¿Es la nota del alumno igual a 10? {igual10}");
 
 // Ejercicio 14 - Comprobar condiciones
 int edad4 = 0;
+
 int entradasDisponibles = 0;
 
+// edad
 Console.WriteLine("14. Edad: ");
 edad4 = int.Parse(Console.ReadLine() ?? "");
 
+// entradas disponibles
 Console.WriteLine("14. Entradas disponibles: ");
+
 entradasDisponibles = int.Parse(Console.ReadLine() ?? "");
 
 
-// Primera condición and (&&) y or (||)
-bool primeraCondicion = edad4 >= 18 && entradasDisponibles >=1;
-Console.WriteLine($"{primeraCondicion}");
+// la persona es mayor de edad
+bool mayorEdad = edad4 >= 18;
 
-primeraCondicion = edad4 >= 18 || entradasDisponibles >= 1;
-Console.WriteLine($"{primeraCondicion}");
+Console.WriteLine($"¿Es mayor de edad?: {mayorEdad}");
+
+
+// hay al menos una entrada disponible
+bool hayEntradas = entradasDisponibles >= 1;
+
+Console.WriteLine($"¿Hay entradas disponibles?: {hayEntradas}");
+
+
+// Primera condición: AND (&&)
+bool primeraCondicion = edad4 >= 18 && entradasDisponibles >= 1;
+
+Console.WriteLine($"¿Es mayor de edad Y hay entradas?: {primeraCondicion}");
+
+
+// Segunda condición: OR (||)
+bool segundaCondicion = edad4 >= 18 || entradasDisponibles >= 1;
+
+Console.WriteLine($"¿Es mayor de edad O hay entradas?: {segundaCondicion}");
 
 
 // Ejercicio 15 - Cuenta bancaria
@@ -230,7 +250,7 @@ precioProd2 = double.Parse(Console.ReadLine() ?? "");
 saldoSufi = saldoDisp >= precioProd2;
 Console.WriteLine($"¿Es el saldo suficiente para comprar el producto? {saldoSufi}");
 
-saldoInsufi = saldoDisp <= precioProd2;
+saldoInsufi = saldoDisp < precioProd2;
 Console.WriteLine($"¿Es el saldo insuficiente para comprar el producto? {saldoInsufi}");
 
 saldoPrecio = saldoSufi && precioProd2 > 0;
