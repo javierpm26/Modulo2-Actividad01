@@ -638,7 +638,7 @@ for (int i = 0; i < listaNumeros.Length; i++)
 }
 
 Console.WriteLine("El número mayor es: " + numeroMayor);
-Console.WriteLine("El número menor es: " + numeroMenor);*/
+Console.WriteLine("El número menor es: " + numeroMenor);
 
 
 
@@ -660,3 +660,55 @@ foreach (decimal nota in listaNotas)
 Console.WriteLine($"La suma de todas las notas es: {sumaNotas}");
 
 Console.WriteLine($"La media de las notas es: {mediaNotas}");
+
+
+
+// NIVEL 11 - Arrays + condiciones
+
+// Ejercicio 36 - Aprobados
+
+decimal[] notasFinales = { 4.75m, 6m, 7.5m, 8m, 9m, 2m, 5.75m };
+
+bool aprobados = false;
+bool suspensos = false;
+
+foreach (decimal nota in notasFinales)
+{
+    if (nota >= 5)
+    {
+        aprobados = true;
+        Console.WriteLine($"{nota} - Aprobado");
+    }
+    else
+    {
+        suspensos = true;
+        Console.WriteLine($"{nota} - Suspenso");
+    }
+}
+
+
+// Ejercicio 37 - Contar aprobados y bonus track los suspensos también
+int[] notas3 = { 4, 7, 8, 3, 5, 9 };
+int alumnosAprobados = 0;
+int alumnosSuspensos = 0;
+
+foreach (int nota in notas3)
+{
+    if (nota >= 5)
+    {
+        alumnosAprobados++;
+    }
+    else
+    {
+        alumnosSuspensos++;
+    }
+}
+
+Console.WriteLine($"Aprobados: {alumnosAprobados}");
+Console.WriteLine($"Suspensos: {alumnosSuspensos}"); */
+
+
+
+
+
+
