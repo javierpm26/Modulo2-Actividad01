@@ -226,11 +226,10 @@ switch (numDia)
     default:
         Console.WriteLine("Día no válido");
         break;
-}*/
+}
 
 
 // Ejercicio 12 - Menú
-
 int opcionUsuario = 0;
 
 Console.WriteLine("1. Crear\n2. Consultar\n3. Modificar\n4. Eliminar");
@@ -256,5 +255,34 @@ switch (opcionUsuario)
     default:
         Console.WriteLine("¡OPCIÓN NO VÁLIDA!");
         break;
-}
+}*/
 
+
+// Ejercicio 13 - Operación matemática
+Console.WriteLine("Introduce un número: ");
+int numA = int.Parse(Console.ReadLine() ?? "");
+
+Console.WriteLine("Introduce otro número: ");
+int numB = int.Parse(Console.ReadLine() ?? "");
+
+Console.WriteLine("Introduce la operación que deseas realizar (+, -, *, /): ");
+string operacionAritm = Console.ReadLine() ?? "";
+
+switch (operacionAritm)
+{
+    case "+":
+        Console.WriteLine($"El resultado de la suma es {numA + numB}");
+        break;
+    case "-":
+        Console.WriteLine($"El resultado de la resta es {numA - numB}");
+        break;
+    case "*":
+        Console.WriteLine($"El resultado de la multiplicación es {numA * numB}");
+        break;
+    case "/":
+        Console.WriteLine($"El resultado de la división es {numA / numB}");
+        break;
+    default:
+        Console.WriteLine("Operación no válida");
+        break;
+}
