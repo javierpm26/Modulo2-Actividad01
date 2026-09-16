@@ -1,7 +1,7 @@
 ﻿// NIVEL 1 - IF
 
 // Ejercicio 1 - Mayor de edad
-Console.WriteLine("Introduce tu edad: ");
+/*Console.WriteLine("Introduce tu edad: ");
 int edad = int.Parse(Console.ReadLine() ?? "");
 
 if (edad >= 18)
@@ -112,4 +112,30 @@ if (contrasena == contrasenaCorrecta)
 else
 {
     Console.WriteLine("Contraseña incorrecta");
+}*/
+
+
+// Ejercicio 8 - Calificación
+Console.WriteLine("Dame una nota: ");
+decimal nota2 = decimal.Parse(Console.ReadLine() ?? "");
+
+if (nota2 < 5)
+{
+    Console.WriteLine("Suspenso");
+}
+else if (nota2 < 7)
+{
+    Console.WriteLine("Aprobado");
+}
+else if (nota2 < 9)
+{
+    Console.WriteLine("Notable");
+}
+else if (nota2 < 10 || nota2 == 10)
+{
+    Console.WriteLine("Sobresaliente");
+}
+else
+{
+    Console.WriteLine("Nota no válida");
 }
