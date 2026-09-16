@@ -598,7 +598,7 @@ string[] nombres = { "Ana", "Luis", "Carlos", "Marta" };
 foreach (string nombre in nombres)
 {
     Console.WriteLine(nombre);
-}*/
+}
 
 
 // Ejercicio 33 - Modificar un elemento
@@ -611,5 +611,23 @@ while(contArray < numeros.Length)
 {
     Console.WriteLine(numeros[contArray]);
     contArray++;
+}*/
+
+
+
+// Ejercicio 34 - Mayor y menor
+int[] listaNumeros = { 26, 14, 93, 99, 1 };
+int numeroMenor = 0;
+int numeroMayor = 0;
+
+
+for (int i = 0; i < listaNumeros.Length; i++)
+{
+   if (listaNumeros[i] > numeroMayor)
+    {
+        numeroMayor = listaNumeros[i];
+    }
+
 }
 
+Console.WriteLine(numeroMayor);
