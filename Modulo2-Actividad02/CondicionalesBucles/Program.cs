@@ -534,12 +534,10 @@ while (numIntro != 0){
     numIntro = int.Parse(Console.ReadLine() ?? "");
 }
 
-Console.WriteLine("Programa terminado.");*/
-
+Console.WriteLine("Programa terminado.");
 
 
 // Ejercicio 28 - Acumlar números
-
 int numUser = -1;
 int sumaTotal = 0;
 
@@ -551,4 +549,21 @@ while (numUser != 0)
     sumaTotal = numUser + sumaTotal;
 }
 
-Console.WriteLine($"La suma total de los valores introducidos es {sumaTotal}\nSaliendo del programa...");
+Console.WriteLine($"La suma total de los valores introducidos es {sumaTotal}\nSaliendo del programa...");*/
+
+
+
+// NIVEL 9 - DO WHILE
+
+// Ejercicio 29 - Pedir contraseña
+string contrasena2 = "";
+string contrasenaCorrecta2 = "abc123";
+
+do
+{
+    Console.WriteLine("Introduce la contraseña: ");
+    contrasena2 = Console.ReadLine() ?? "";
+    Console.WriteLine("Contraseña incorrecta.");
+}while(contrasena2 != contrasenaCorrecta2);
+
+Console.WriteLine("Contraseña correcta.");
