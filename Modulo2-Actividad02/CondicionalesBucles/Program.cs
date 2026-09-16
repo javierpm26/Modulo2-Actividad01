@@ -490,11 +490,10 @@ int tablaMulti = int.Parse(Console.ReadLine() ?? "");
 for (int i = 1; i <= 10; i++)
 {
     Console.WriteLine($"{tablaMulti} x {i} = {tablaMulti*i}");
-}*/
+}
 
 
 // Ejercicio 24 - Suma acumulada
-
 int contador = 0;
 
 for (int i = 1; i <= 100; i++ )
@@ -503,5 +502,17 @@ for (int i = 1; i <= 100; i++ )
     Console.WriteLine($"{contador}");
     contador += i;
 }
-Console.WriteLine($"{contador}");
+Console.WriteLine($"{contador}");*/
+
+
+
+// NIVEL 8 - WHILE
+
+// Ejercicio 25 - Contador
+int cont = 1;
+while (cont <= 10)
+{
+    Console.WriteLine($"{cont}");
+    cont++;
+}
 
