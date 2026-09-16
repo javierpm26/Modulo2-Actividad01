@@ -1,7 +1,7 @@
 ﻿// NIVEL 1 - IF
 
 // Ejercicio 1 - Mayor de edad
-Console.WriteLine("Introduce tu edad: ");
+/*Console.WriteLine("Introduce tu edad: ");
 int edad = int.Parse(Console.ReadLine() ?? "");
 
 if (edad >= 18)
@@ -164,4 +164,32 @@ else if (edad2 <= 100)
 else
 {
     Console.WriteLine("Edad inválida");
+}*/
+
+
+// Ejercicio 10
+
+decimal precioSinDescuento = 0m;
+decimal descuento = 0m;
+decimal precioFinal = 0m;
+
+Console.WriteLine("Precio del producto");
+precioSinDescuento = decimal.Parse(Console.ReadLine() ?? "");
+
+if (precioSinDescuento < 50)
+{
+    Console.WriteLine("El precio es menor que 50€: Sin descuento");
 }
+else if (precioSinDescuento < 100)
+{
+    descuento = (precioSinDescuento * 5.00m ) / 100;
+    precioFinal = precioSinDescuento - descuento;
+    Console.WriteLine($"El precio es {precioSinDescuento} se le aplica un 5% y se queda en {precioFinal}");
+}
+else
+{
+    descuento = (precioSinDescuento * 10.00m) / 100;
+    precioFinal = precioSinDescuento - descuento;
+    Console.WriteLine($"El precio es {precioSinDescuento} se le aplica UN 10% y se queda en {precioFinal}.");
+}
+   
