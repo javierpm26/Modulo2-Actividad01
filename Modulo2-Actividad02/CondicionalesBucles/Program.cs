@@ -48,3 +48,18 @@ else
 {
     Console.WriteLine("Estás suspenso");
 }
+
+
+// Ejercicio 4 - Temperatura
+Console.WriteLine("Dime una temperatura: ");
+decimal temperatura = decimal.Parse(Console.ReadLine() ?? "");
+
+if (temperatura > 30)
+{
+    Console.WriteLine($"Hay {temperatura} grados, hace mucho calor");
+}
+else
+{
+    Console.WriteLine($"Hay {temperatura} grados, hace fresquito");
+}
+
