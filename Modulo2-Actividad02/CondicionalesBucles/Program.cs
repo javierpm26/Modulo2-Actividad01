@@ -285,7 +285,7 @@ switch (operacionAritm)
     default:
         Console.WriteLine("Operación no válida");
         break;
-}*/
+}
 
 
 // Ejercicio 14 - Meses
@@ -333,5 +333,22 @@ switch(numMes)
     default:
         Console.WriteLine("¡¡OPCIÓN NO VÁLIDA!!");
         break;
-
 }
+
+
+
+// NIVEL 5 - SWITCH EXPRESSIONS
+
+// Ejercicio 15 - Traducir una opción
+Console.WriteLine("Introduce un número del 1 al 3: ");
+int numOpcion = int.Parse(Console.ReadLine() ?? "");
+
+string resultado = numOpcion switch
+{
+    1 => "Bajo",
+    2 => "Medio",
+    3 => "Alto",
+    _ => "No válido"
+};
+
+Console.WriteLine($"Has elegido la opción {resultado}");*/
