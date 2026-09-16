@@ -1,7 +1,7 @@
 ﻿// NIVEL 1 - IF
 
 // Ejercicio 1 - Mayor de edad
-Console.WriteLine("Introduce tu edad: ");
+/*Console.WriteLine("Introduce tu edad: ");
 int edad = int.Parse(Console.ReadLine() ?? "");
 
 if (edad >= 18)
@@ -29,4 +29,22 @@ else if (numero == 0)
 else
 {
     Console.WriteLine($"El número es negativo");
+}
+*/
+
+// Ejercicio 3 - Nota aprobada
+Console.WriteLine("Introduce tu nota: ");
+int nota = int.Parse(Console.ReadLine() ?? "");
+
+if (nota > 10 || nota < 0)
+{
+    Console.WriteLine("Nota no válida");
+}
+else if (nota >= 5)
+{
+    Console.WriteLine("Estás aprobado");
+}
+else
+{
+    Console.WriteLine("Estás suspenso");
 }
