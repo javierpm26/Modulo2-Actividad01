@@ -30,7 +30,7 @@ else
 {
     Console.WriteLine($"El número es negativo");
 }
-*/
+
 
 // Ejercicio 3 - Nota aprobada
 Console.WriteLine("Introduce tu nota: ");
@@ -61,5 +61,22 @@ if (temperatura > 30)
 else
 {
     Console.WriteLine($"Hay {temperatura} grados, hace fresquito");
+}
+*/
+
+
+// NIVEL 2 - IF + ELSE
+
+// Ejercicio 5 - Par o impar
+Console.WriteLine("Introduce un número entero: ");
+int numero2 = int.Parse(Console.ReadLine() ?? "");
+
+if (numero2%2 == 0)
+{
+    Console.WriteLine("El número es par.");
+}
+else
+{
+    Console.WriteLine("El número es impar.");
 }
 
