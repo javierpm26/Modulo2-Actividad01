@@ -255,7 +255,7 @@ switch (opcionUsuario)
     default:
         Console.WriteLine("¡OPCIÓN NO VÁLIDA!");
         break;
-}*/
+}
 
 
 // Ejercicio 13 - Operación matemática
@@ -285,4 +285,53 @@ switch (operacionAritm)
     default:
         Console.WriteLine("Operación no válida");
         break;
+}*/
+
+
+// Ejercicio 14 - Meses
+Console.WriteLine("Introduce un número: ");
+int numMes = int.Parse(Console.ReadLine() ?? "");
+
+switch(numMes)
+{
+    case 1:
+        Console.WriteLine("1. ==> ENERO");
+        break;
+    case 2:
+        Console.WriteLine("2. ==> FEBRERO");
+        break;
+    case 3:
+        Console.WriteLine("3. ==> MARZO");
+        break;
+    case 4:
+        Console.WriteLine("4. ==> ABRIL");
+        break;
+    case 5:
+        Console.WriteLine("5. ==> MAYO");
+        break;
+    case 6:
+        Console.WriteLine("6. ==> JUNIO");
+        break;
+    case 7:
+        Console.WriteLine("7. ==> JULIO");
+        break;
+    case 8:
+        Console.WriteLine("8. ==> AGOSTO");
+        break;
+    case 9:
+        Console.WriteLine("9. ==> SEPTIEMBRE");
+        break;
+    case 10:
+        Console.WriteLine("10. ==> OCTUBRE");
+        break;
+    case 11:
+        Console.WriteLine("11. ==> NOVIEMBRE");
+        break;
+    case 12:
+        Console.WriteLine("12. ==> DICIEMBRE");
+        break;
+    default:
+        Console.WriteLine("¡¡OPCIÓN NO VÁLIDA!!");
+        break;
+
 }
