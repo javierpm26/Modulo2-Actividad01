@@ -566,11 +566,10 @@ do
     Console.WriteLine("Contraseña incorrecta.");
 }while(contrasena2 != contrasenaCorrecta2);
 
-Console.WriteLine("Contraseña correcta.");*/
+Console.WriteLine("Contraseña correcta.");
 
 
 // Ejercicio 30 - Menú repetitivo
-
 int userOption = 0;
 
 do
@@ -578,8 +577,17 @@ do
     Console.WriteLine("Selecciona una opción de la lista: ");
     Console.WriteLine("1. Saludar\n2. Mostrar fecha\n3. Salir\n");
     userOption = int.Parse(Console.ReadLine() ?? "");
-} while (userOption != 3);
+} while (userOption != 3);*/
 
 
 
+// NIVEL 10 - ARRAYS
+
+// Ejercicio 31 - Crear un array
+int[] numArray = {1, 2, 3, 4, 5};
+
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine(numArray[i]);
+}
 
