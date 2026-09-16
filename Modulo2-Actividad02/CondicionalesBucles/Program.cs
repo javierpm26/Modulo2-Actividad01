@@ -502,7 +502,7 @@ for (int i = 1; i <= 100; i++ )
     Console.WriteLine($"{contador}");
     contador += i;
 }
-Console.WriteLine($"{contador}");*/
+Console.WriteLine($"{contador}");
 
 
 
@@ -514,5 +514,15 @@ while (cont <= 10)
 {
     Console.WriteLine($"{cont}");
     cont++;
-}
+}*/
 
+
+// Ejercicio 26 - Cuenta atrás
+
+int counterStrike = 10;
+
+while (counterStrike >= 1 )
+{
+    Console.WriteLine($"{counterStrike}");
+    counterStrike --;
+}
