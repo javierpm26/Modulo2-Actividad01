@@ -352,3 +352,26 @@ string resultado = numOpcion switch
 };
 
 Console.WriteLine($"Has elegido la opción {resultado}");*/
+
+
+
+// Ejercicio 16 - Día abreviado
+
+Console.Write("1=>Lun\n2=>Mar\n3=>Mié\n4=>Jue\n5=>Vie\n6=>Sáb\n7=>Dom\n");
+
+Console.WriteLine("Introduce un número (1-7): ");
+int numDia2 = int.Parse(Console.ReadLine() ?? "");
+
+string diasSemana = numDia2 switch
+{
+    1 => "Lun",
+    2 => "Mar",
+    3 => "Mié",
+    4 => "Jue",
+    5 => "Vie",
+    6 => "Sáb",
+    7 => "Dom",
+    _ => "???"
+};
+
+Console.WriteLine($" Has elegido: {diasSemana}");
