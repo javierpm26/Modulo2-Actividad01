@@ -14,3 +14,19 @@ else
 }
 
 
+// Ejercicio 2 - Número positivo
+Console.WriteLine("Introduce un número entero: ");
+int numero = int.Parse(Console.ReadLine() ?? "");
+
+if (numero > 0)
+{
+    Console.WriteLine($"El número {numero} es mayor que 0");
+}
+else if (numero == 0)
+{
+    Console.WriteLine("El número es 0");
+}
+else
+{
+    Console.WriteLine($"El número es negativo");
+}
