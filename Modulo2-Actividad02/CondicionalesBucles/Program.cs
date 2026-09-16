@@ -480,7 +480,7 @@ for (int i = 2; i <= 20; i += 2)
 for (int i = 10; i > 0; i--)
 {
     Console.WriteLine(i);
-}*/
+}
 
 
 // Ejercicio 23 - Tabla de multiplicar
@@ -490,5 +490,18 @@ int tablaMulti = int.Parse(Console.ReadLine() ?? "");
 for (int i = 1; i <= 10; i++)
 {
     Console.WriteLine($"{tablaMulti} x {i} = {tablaMulti*i}");
+}*/
+
+
+// Ejercicio 24 - Suma acumulada
+
+int contador = 0;
+
+for (int i = 1; i <= 100; i++ )
+{
+
+    Console.WriteLine($"{contador}");
+    contador += i;
 }
+Console.WriteLine($"{contador}");
 
