@@ -589,15 +589,27 @@ int[] numArray = {1, 2, 3, 4, 5};
 for (int i = 0; i < 5; i++)
 {
     Console.WriteLine(numArray[i]);
-}*/
+}
 
 
 // Ejercicio 32 - Nombres
-
 string[] nombres = { "Ana", "Luis", "Carlos", "Marta" };
 
 foreach (string nombre in nombres)
 {
     Console.WriteLine(nombre);
+}*/
+
+
+// Ejercicio 33 - Modificar un elemento
+int[] numeros = {10, 20, 30, 40, 50};
+numeros[1] = 100;
+
+int contArray = 0;
+
+while(contArray < numeros.Length)
+{
+    Console.WriteLine(numeros[contArray]);
+    contArray++;
 }
 
