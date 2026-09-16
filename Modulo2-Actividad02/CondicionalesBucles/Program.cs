@@ -351,12 +351,10 @@ string resultado = numOpcion switch
     _ => "No válido"
 };
 
-Console.WriteLine($"Has elegido la opción {resultado}");*/
-
+Console.WriteLine($"Has elegido la opción {resultado}");
 
 
 // Ejercicio 16 - Día abreviado
-
 Console.Write("1=>Lun\n2=>Mar\n3=>Mié\n4=>Jue\n5=>Vie\n6=>Sáb\n7=>Dom\n");
 
 Console.WriteLine("Introduce un número (1-7): ");
@@ -375,3 +373,14 @@ string diasSemana = numDia2 switch
 };
 
 Console.WriteLine($" Has elegido: {diasSemana}");
+*/
+
+
+// NIVEL 6 - PATTERN MATCHING
+
+// Ejercicio 17 - Comprobar tipo
+object dato = 25;
+if (dato is int)
+{
+    Console.WriteLine("El número introducido es de tipo entero.");
+}
