@@ -514,15 +514,24 @@ while (cont <= 10)
 {
     Console.WriteLine($"{cont}");
     cont++;
-}*/
+}
 
 
 // Ejercicio 26 - Cuenta atrás
-
 int counterStrike = 10;
 
 while (counterStrike >= 1 )
 {
     Console.WriteLine($"{counterStrike}");
     counterStrike --;
+}*/
+
+
+// Ejercicio 27 - Seguir hasta cero
+int numIntro = -1;
+while (numIntro != 0){
+    Console.WriteLine("Introduce un número.");
+    numIntro = int.Parse(Console.ReadLine() ?? "");
 }
+
+Console.WriteLine("Programa terminado.");
