@@ -397,7 +397,7 @@ else
 {
     Console.WriteLine($"{dato2} NO es un número entero y tampoco es mayor a 18");
 }
-*/
+
 
 // Ejercicio 19 - Analizar diferentes datos
 object dato1 = 25;
@@ -456,4 +456,15 @@ else if (dato3 is double)
 else
 {
     Console.WriteLine("La variable object dato3 es de tipo desconocido.");
+}*/
+
+
+// NIVEL 7 - Bucle For
+
+// Ejercicio 20 - Del 1 al 10
+
+for (int i = 0; i <= 10; i++)
+{
+    Console.WriteLine($"{i}");
 }
+
