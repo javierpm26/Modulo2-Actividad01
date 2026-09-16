@@ -1,7 +1,7 @@
 ﻿// NIVEL 1 - IF
 
 // Ejercicio 1 - Mayor de edad
-/*Console.WriteLine("Introduce tu edad: ");
+Console.WriteLine("Introduce tu edad: ");
 int edad = int.Parse(Console.ReadLine() ?? "");
 
 if (edad >= 18)
@@ -164,11 +164,10 @@ else if (edad2 <= 100)
 else
 {
     Console.WriteLine("Edad inválida");
-}*/
+}
 
 
-// Ejercicio 10
-
+// Ejercicio 10 - Precio con descuento
 decimal precioSinDescuento = 0m;
 decimal descuento = 0m;
 decimal precioFinal = 0m;
@@ -192,4 +191,39 @@ else
     precioFinal = precioSinDescuento - descuento;
     Console.WriteLine($"El precio es {precioSinDescuento} se le aplica UN 10% y se queda en {precioFinal}.");
 }
-   
+
+
+
+//  NIVEL 4 - SWITCH
+
+// Ejercicio 11 - Día de la semana
+Console.WriteLine("Introduce un número del 1 al 7: ");
+int numDia = int.Parse(Console.ReadLine() ?? "");
+
+switch (numDia)
+{
+    case 1:
+        Console.WriteLine("El día 1 de la semana es Lunes");
+        break;
+    case 2:
+        Console.WriteLine("El día 2 de la semana es Martes");
+        break;
+    case 3:
+        Console.WriteLine("El día 3 de la semana es Miércoles");
+        break;
+    case 4:
+        Console.WriteLine("El día 4 de la semana es Jueves");
+        break;
+    case 5:
+        Console.WriteLine("El día 5 de la semana es Viernes");
+        break;
+    case 6:
+        Console.WriteLine("El día 6 de la semana es Sábado");
+        break;
+    case 7:
+        Console.WriteLine("El día 7 de la semana es Domingo");
+        break;
+    default:
+        Console.WriteLine("Día no válido");
+        break;
+}
