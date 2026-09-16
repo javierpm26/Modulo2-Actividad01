@@ -80,3 +80,19 @@ else
     Console.WriteLine("El número es impar.");
 }
 
+// Ejercicio 6 - Positivo, negativo o cero
+Console.WriteLine("Introduce un número entero:");
+int numero3 = int.Parse(Console.ReadLine() ?? "");
+
+if (numero3 > 0)
+{
+    Console.WriteLine($"{numero3} es un número positivo");
+}
+else if (numero3 == 0)
+{
+    Console.WriteLine($"{numero3} es cero (0)");
+}
+else
+{
+    Console.WriteLine($"{numero3} es un número negativo");
+}
