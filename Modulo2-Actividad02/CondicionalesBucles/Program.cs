@@ -1,7 +1,7 @@
 ﻿// NIVEL 1 - IF
 
 // Ejercicio 1 - Mayor de edad
-/*Console.WriteLine("Introduce tu edad: ");
+Console.WriteLine("Introduce tu edad: ");
 int edad = int.Parse(Console.ReadLine() ?? "");
 
 if (edad >= 18)
@@ -62,7 +62,7 @@ else
 {
     Console.WriteLine($"Hay {temperatura} grados, hace fresquito");
 }
-*/
+
 
 
 // NIVEL 2 - IF + ELSE
@@ -80,6 +80,7 @@ else
     Console.WriteLine("El número es impar.");
 }
 
+
 // Ejercicio 6 - Positivo, negativo o cero
 Console.WriteLine("Introduce un número entero:");
 int numero3 = int.Parse(Console.ReadLine() ?? "");
@@ -95,4 +96,20 @@ else if (numero3 == 0)
 else
 {
     Console.WriteLine($"{numero3} es un número negativo");
+}
+
+
+// Ejercicio 7 - Contraseña
+string contrasenaCorrecta = "1234";
+
+Console.WriteLine("Introduce la contraseña: ");
+string contrasena = Console.ReadLine() ?? "";
+
+if (contrasena == contrasenaCorrecta)
+{
+    Console.WriteLine("Contraseña correcta");
+}
+else
+{
+    Console.WriteLine("Contraseña incorrecta");
 }
