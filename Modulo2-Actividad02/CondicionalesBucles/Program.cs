@@ -1,7 +1,7 @@
 ﻿// NIVEL 1 - IF
 
 // Ejercicio 1 - Mayor de edad
-/*Console.WriteLine("Introduce tu edad: ");
+Console.WriteLine("Introduce tu edad: ");
 int edad = int.Parse(Console.ReadLine() ?? "");
 
 if (edad >= 18)
@@ -387,15 +387,15 @@ if (dato is int)
 
 
 // Ejercicio 18 - Comprobar tipo y valor
-object dato2 = 25;
+object datoA = 25;
 
-if (dato2 is int numero && numero > 18)
+if (datoA is int numeroEntero && numeroEntero > 18)
 {
-    Console.WriteLine($"{dato2} es un número entero y es mayor que 18");
+    Console.WriteLine($"{datoA} es un número entero y es mayor que 18");
 }
 else
 {
-    Console.WriteLine($"{dato2} NO es un número entero y tampoco es mayor a 18");
+    Console.WriteLine($"{datoA} NO es un número entero y tampoco es mayor a 18");
 }
 
 
@@ -614,9 +614,8 @@ while(contArray < numeros.Length)
 }
 
 
-
 // Ejercicio 34 - Mayor y menor
-int[] listaNumeros = { 26, 14, 93, 99, 1 };
+int[] listaNumeros = {26, 14, 93, 99, 1};
 
 
 int numeroMenor = listaNumeros[0]; // Inicio las variables con el valor del primer valor del array, sobre todo para que el número menor se compare con algo
@@ -641,19 +640,17 @@ Console.WriteLine("El número mayor es: " + numeroMayor);
 Console.WriteLine("El número menor es: " + numeroMenor);
 
 
-
-
 // Ejercicio 35 - Suma y media
-decimal[] listaNotas = { 4.5m, 5m, 7m, 8.25m, 10m, 1.25m, 6m };
+decimal[] listaNotas = {4.5m, 5m, 7m, 8.25m, 10m, 1.25m, 6m};
 
-decimal  sumaNotas = 0m;
+decimal sumaNotas = 0m;
 decimal mediaNotas = 0m;
 
-foreach (decimal nota in listaNotas)
+foreach (decimal notaA in listaNotas)
 {
-    sumaNotas += nota;
+    sumaNotas += notaA;
     mediaNotas = (sumaNotas / listaNotas.Length);
-    Console.WriteLine($"Las notas obtenidas son {nota}");
+    Console.WriteLine($"Las notas obtenidas son {notaA}");
 
 }
 
@@ -663,38 +660,32 @@ Console.WriteLine($"La media de las notas es: {mediaNotas}");
 
 
 
-// NIVEL 11 - Arrays + condiciones
+// NIVEL 11 - ARRAYS + CONDICIONES
 
 // Ejercicio 36 - Aprobados
+decimal[] notasFinales = {4.75m, 6m, 7.5m, 8m, 9m, 2m, 5.75m};
 
-decimal[] notasFinales = { 4.75m, 6m, 7.5m, 8m, 9m, 2m, 5.75m };
-
-bool aprobados = false;
-bool suspensos = false;
-
-foreach (decimal nota in notasFinales)
+foreach (decimal notaB in notasFinales)
 {
-    if (nota >= 5)
+    if (notaB >= 5)
     {
-        aprobados = true;
-        Console.WriteLine($"{nota} - Aprobado");
+        Console.WriteLine($"{notaB} - Aprobado");
     }
     else
     {
-        suspensos = true;
-        Console.WriteLine($"{nota} - Suspenso");
+        Console.WriteLine($"{notaB} - Suspenso");
     }
 }
 
 
 // Ejercicio 37 - Contar aprobados y bonus track los suspensos también
-int[] notas3 = { 4, 7, 8, 3, 5, 9 };
+int[] notas2 = {4, 7, 8, 3, 5, 9};
 int alumnosAprobados = 0;
 int alumnosSuspensos = 0;
 
-foreach (int nota in notas3)
+foreach (int notaC in notas2)
 {
-    if (nota >= 5)
+    if (notaC >= 5)
     {
         alumnosAprobados++;
     }
@@ -705,11 +696,11 @@ foreach (int nota in notas3)
 }
 
 Console.WriteLine($"Aprobados: {alumnosAprobados}");
-Console.WriteLine($"Suspensos: {alumnosSuspensos}"); */
+Console.WriteLine($"Suspensos: {alumnosSuspensos}");
 
 
 // Ejercicio 38 - Números pares
-int[] numerosEnteros = {1,2,5,7,6,10,22,29,30};
+int[] numerosEnteros = {1, 2, 5, 7, 6, 10, 22, 29, 30};
 
 for (int i = 0; i<numerosEnteros.Length; i++)
 {
@@ -721,6 +712,28 @@ for (int i = 0; i<numerosEnteros.Length; i++)
 
 
 
+// NIVEL 12 - ENUMERACIONES
+
+// Ejercicio 39 - Crear un enum
+Color colorElegido = Color.Azul;
+Console.WriteLine($"El color elegido es {colorElegido}");
 
 
-
+// Ejercicio 40 - enum + switch
+Nivel nivelElegido = Nivel.Bajo;
+  
+switch (nivelElegido)
+{
+    case Nivel.Bajo:
+        Console.WriteLine("Has elegido el nivel BAJO");
+        break;
+    case Nivel.Medio:
+        Console.WriteLine("Has elegido el nivel MEDIO");
+        break;
+    case Nivel.Alto:
+        Console.WriteLine("Has elegido el nivel ALTO");
+        break;
+    default:
+        Console.WriteLine("Nivel desconocido");
+        break;
+}
