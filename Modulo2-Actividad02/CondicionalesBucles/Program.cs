@@ -524,7 +524,7 @@ while (counterStrike >= 1 )
 {
     Console.WriteLine($"{counterStrike}");
     counterStrike --;
-}*/
+}
 
 
 // Ejercicio 27 - Seguir hasta cero
@@ -534,4 +534,21 @@ while (numIntro != 0){
     numIntro = int.Parse(Console.ReadLine() ?? "");
 }
 
-Console.WriteLine("Programa terminado.");
+Console.WriteLine("Programa terminado.");*/
+
+
+
+// Ejercicio 28 - Acumlar números
+
+int numUser = -1;
+int sumaTotal = 0;
+
+while (numUser != 0)
+{
+    Console.WriteLine("Introduce un número: ");
+    numUser = int.Parse(Console.ReadLine() ?? "");
+
+    sumaTotal = numUser + sumaTotal;
+}
+
+Console.WriteLine($"La suma total de los valores introducidos es {sumaTotal}\nSaliendo del programa...");
