@@ -373,7 +373,7 @@ string diasSemana = numDia2 switch
 };
 
 Console.WriteLine($" Has elegido: {diasSemana}");
-*/
+
 
 
 // NIVEL 6 - PATTERN MATCHING
@@ -383,4 +383,20 @@ object dato = 25;
 if (dato is int)
 {
     Console.WriteLine("El número introducido es de tipo entero.");
+}*/
+
+
+// Ejercicio 18 - Comprobar tipo y valor
+
+object dato2 = 25;
+
+if (dato2 is int numero && numero > 18)
+{
+    Console.WriteLine($"{dato2} es un número entero y es mayor que 18");
 }
+else
+{
+    Console.WriteLine($"{dato2} NO es un número entero y tampoco es mayor a 18");
+}
+
+
