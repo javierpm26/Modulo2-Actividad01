@@ -383,11 +383,10 @@ object dato = 25;
 if (dato is int)
 {
     Console.WriteLine("El número introducido es de tipo entero.");
-}*/
+}
 
 
 // Ejercicio 18 - Comprobar tipo y valor
-
 object dato2 = 25;
 
 if (dato2 is int numero && numero > 18)
@@ -398,5 +397,63 @@ else
 {
     Console.WriteLine($"{dato2} NO es un número entero y tampoco es mayor a 18");
 }
+*/
 
+// Ejercicio 19 - Analizar diferentes datos
+object dato1 = 25;
+object dato2 = "Hola";
+object dato3 = 8.5;
 
+// dato1
+if (dato1 is int)
+{
+    Console.WriteLine("La variable object dato1 es de tipo entero.");
+}
+else if (dato1 is string)
+{
+    Console.WriteLine("La variable object dato1 es de tipo string.");
+}
+else if (dato1 is double)
+{
+    Console.WriteLine("La variable object dato1 es de tipo double.");
+}
+else
+{
+    Console.WriteLine("La variable object dato1 es de tipo desconocido.");
+}
+
+// dato2
+if (dato2 is int)
+{
+    Console.WriteLine("La variable object dato2 es de tipo entero.");
+}
+else if (dato2 is string)
+{
+    Console.WriteLine("La variable object dato2 es de tipo string.");
+}
+else if (dato2 is double)
+{
+    Console.WriteLine("La variable object dato2 es de tipo double.");
+}
+else
+{
+    Console.WriteLine("La variable object dato2 es de tipo desconocido.");
+}
+
+// dato3
+if (dato3 is int)
+{
+    Console.WriteLine("La variable object dato3 es de tipo entero.");
+}
+else if (dato3 is string)
+{
+    Console.WriteLine("La variable object dato3 es de tipo string.");
+}
+else if (dato3 is double)
+{
+    Console.WriteLine("La variable object dato3 es de tipo double.");
+}
+else
+{
+    Console.WriteLine("La variable object dato3 es de tipo desconocido.");
+}
