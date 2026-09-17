@@ -130,8 +130,8 @@ catch
 try
 {
     Console.WriteLine("Introduce tu edad: ");
-    int edad = int.Parse(Console.ReadLine() ?? "");
-    Console.WriteLine($"Ok, tu edad es {edad}");
+    int edadTry = int.Parse(Console.ReadLine() ?? "");
+    Console.WriteLine($"Ok, tu edad es {edadTry}");
 
 }
 catch
