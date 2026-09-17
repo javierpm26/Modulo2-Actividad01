@@ -1,7 +1,7 @@
 ﻿// BLOQUE 1 - FUNCIONES
 
 // Ejercicio 1 - Primera función
-/*static void MostrarMensaje()
+static void MostrarMensaje()
 {
     Console.WriteLine("Bienvenido al programa");
 }
@@ -51,20 +51,30 @@ MostrarAmbito();
 //Console.WriteLine(numeroLocal);
 
 
+
 // BLOQUE 2 - PASO DE PARÁMETROS Y RECURSIVIDAD 
 
 // Ejercicio 6 - Paso por valor
+int numero1 = 10; //Esta es la variable número original
 
-int numero = 10; //Esta es la variable número original
-
-static void Cambiar(int numero)
+static void Cambiar(int numero1)
 {
-    numero = 26; // Esta variable numero es una copia que usa la función
-    Console.WriteLine($"Aquí numero tiene un valor de {numero}"); // Muestra lo que vale la copia dentro de la función
+    numero1 = 26; // Esta variable numero es una copia que usa la función
+    Console.WriteLine($"Aquí numero tiene un valor de {numero1}"); // Muestra lo que vale la copia dentro de la función
 
 }
-Cambiar(numero); // Llamar a la función hace una copia de la variable numero al que machaca su valor que es 10 a 26
-Console.WriteLine($"Numero aquí vale {numero}");*/
+Cambiar(numero1); // Llamar a la función hace una copia de la variable numero al que machaca su valor que es 10 a 26
+Console.WriteLine($"Numero aquí vale {numero1}");
 
 
+// Ejercicio 7 - ref
+int numero2 = 10;
 
+static void Cambiar2(ref int numero2)
+{
+    numero2 = 100;
+    Console.WriteLine($"Aquí numero tiene un valor de {numero2}");
+
+}
+Cambiar2(ref numero2);
+Console.WriteLine($"Numero aquí vale {numero2}");
