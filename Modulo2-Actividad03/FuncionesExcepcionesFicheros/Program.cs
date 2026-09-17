@@ -18,3 +18,10 @@ static void saludar(string nombre)
 saludar("Andrea");
 saludar("Javier");
 
+// Ejercicio 3 - Función con retorno
+static int Sumar(int numA, int numB)
+{
+    return numA + numB;
+}
+
+Console.WriteLine($"El resultado de la suma es {Sumar(5,10)}");
