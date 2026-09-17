@@ -1,7 +1,7 @@
 ﻿// NIVEL 1 - IF
 
 // Ejercicio 1 - Mayor de edad
-/*Console.WriteLine("Introduce tu edad: ");
+Console.WriteLine("Introduce tu edad: ");
 int edad = int.Parse(Console.ReadLine() ?? "");
 
 if (edad >= 18)
@@ -881,14 +881,17 @@ do
             break;
     }
     
-}while(opcionMenu != 5); */
+}while(opcionMenu != 5);
+
+
 
 // NIVEL 14 - RETO FINAL
+
 // Ejercicio 45 - Gestión de notas
 
 double[] notasFinales2 = { 7.5, 4.0, 8.5, 6.0, 3.5, 9.0};
 
-double mediaNotas = 0.0;
+double mediaNotas2 = 0.0;
 double notaMayor = notasFinales2[0];
 double notaMenor = notasFinales2[0];
 int numeroAprobados = 0;
@@ -900,7 +903,7 @@ bool mediaMayorIgual5 = false;
 foreach (double notas in notasFinales2)
 {
     Console.WriteLine(notas); // Mostrar todas las notas
-    mediaNotas += (notas) / notasFinales2.Length;
+    mediaNotas2 += (notas) / notasFinales2.Length;
 
     if (notas > notaMayor)
     {
@@ -954,6 +957,38 @@ Console.Write($"{mensajeMedia} ");
 
 
 
+// RETO EXTRA
 
+// Ejercicio 46 - Analizador genérico
+object[] datos =
+{
+    10,
+    "Hola",
+    5.5m,
+    true,
+    25
+};
 
-
+foreach (object datoArray in datos) 
+{
+    if (datoArray is int)
+    {
+        Console.WriteLine("Este objeto es de tipo ENTERO.");
+    }
+    else if (datoArray is string)
+    {
+        Console.WriteLine("Este objeto es de tipo STRING.");
+    }
+    else if (datoArray is decimal)
+    {
+        Console.WriteLine("Este objeto es de tipo DECIMAL.");
+    }
+    else if (datoArray is bool)
+    {
+        Console.WriteLine("Este objeto es de tipo BOOLEANO.");
+    }
+    else
+    {
+        Console.WriteLine("Este objeto es de tipo DESCONOCIDO.");
+    }
+};
