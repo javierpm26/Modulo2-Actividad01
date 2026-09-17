@@ -1,7 +1,7 @@
 ﻿// NIVEL 1 - IF
 
 // Ejercicio 1 - Mayor de edad
-Console.WriteLine("Introduce tu edad: ");
+/*Console.WriteLine("Introduce tu edad: ");
 int edad = int.Parse(Console.ReadLine() ?? "");
 
 if (edad >= 18)
@@ -736,4 +736,20 @@ switch (nivelElegido)
     default:
         Console.WriteLine("Nivel desconocido");
         break;
-}
+}*/
+
+
+// Ejercicio 41 - enum + switch expression
+
+Nivel nivelElegido = Nivel.Alto; // En una variable guardamos valor del enum en el archivo nivel40.cs
+
+string mensajeNivel = nivelElegido switch // Se hace un switch expression creando una variable con el mensaje
+
+{
+    Nivel.Bajo => "Nivel bajo",
+     Nivel.Medio => "Nivel medio",
+     Nivel.Alto => "Nivel alto",
+     _ => "Desconocido ¿?"
+};
+
+Console.WriteLine(mensajeNivel);
