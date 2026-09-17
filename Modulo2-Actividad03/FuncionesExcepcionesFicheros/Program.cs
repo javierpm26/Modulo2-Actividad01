@@ -1,7 +1,7 @@
 ﻿// BLOQUE 1 - FUNCIONES
 
 // Ejercicio 1 - Primera función
-/*static void MostrarMensaje()
+static void MostrarMensaje()
 {
     Console.WriteLine("Bienvenido al programa");
 }
@@ -166,11 +166,10 @@ try
 catch(Exception ex)
 {
     Console.WriteLine(ex.Message);
-}*/
+}
 
 
 // Ejercicio 13 - finally
-
 static void validadEdad2(int edad)
 {
     if (edad > 0)
@@ -185,8 +184,8 @@ static void validadEdad2(int edad)
 try
 {
     Console.WriteLine("Introduce tu edad:");
-    int edad = int.Parse(Console.ReadLine() ?? "");
-    validadEdad2(edad);
+    int edad2 = int.Parse(Console.ReadLine() ?? "");
+    validadEdad2(edad2);
 
 }
 catch (Exception excepcion)
@@ -200,3 +199,18 @@ finally
 }
 
 
+
+// BLOQUE 4 - FICHEROS Y DIRECTORIOS
+
+// Ejercicio 14 - Crear un directorio y un archivo
+bool existeCarpeta = Directory.Exists("datos");
+if(existeCarpeta == true)
+{
+    Console.WriteLine("La carpeta ya está creada.");
+}
+else
+{
+    Directory.CreateDirectory("datos");
+    string ruta = Path.Combine("datos", "mensaje.txt");
+    File.WriteAllText(ruta, "Hola desde C#");
+}
