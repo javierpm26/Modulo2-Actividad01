@@ -1,7 +1,7 @@
 ﻿// BLOQUE 1 - FUNCIONES
 
 // Ejercicio 1 - Primera función
-static void MostrarMensaje()
+/*static void MostrarMensaje()
 {
     Console.WriteLine("Bienvenido al programa");
 }
@@ -77,4 +77,21 @@ static void Cambiar2(ref int numero2)
 
 }
 Cambiar2(ref numero2);
-Console.WriteLine($"Numero aquí vale {numero2}");
+Console.WriteLine($"Numero aquí vale {numero2}");*/
+
+
+// Ejercicio 8 - out
+
+int numero3 = 5;
+
+static void Cambiar3(int numero3, out int nDoble, out int nTriple)
+{
+    nDoble = numero3 * 2;
+    nTriple = numero3 * 3;
+
+    Console.WriteLine($"El doble de {numero3} es {nDoble}");
+    Console.WriteLine($"El triple de {numero3} es {nTriple}");
+
+}
+Cambiar3(numero3, out int nDoble, out int nTriple);
+Console.WriteLine(numero3);
