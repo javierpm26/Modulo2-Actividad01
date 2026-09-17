@@ -1,7 +1,7 @@
 ﻿// NIVEL 1 - IF
 
 // Ejercicio 1 - Mayor de edad
-/*Console.WriteLine("Introduce tu edad: ");
+Console.WriteLine("Introduce tu edad: ");
 int edad = int.Parse(Console.ReadLine() ?? "");
 
 if (edad >= 18)
@@ -754,6 +754,9 @@ string mensajeNivel = nivelElegido2 switch // Se hace un switch expression crean
 Console.WriteLine(mensajeNivel);
 
 
+
+// NIVEL 13 - RETOS
+
 // Ejercicio 42 - Analizador de notas
 int numNotas = 0;
 
@@ -801,30 +804,29 @@ for (int i = 0; i < arrayNotas.Length; i++)
 Console.WriteLine($"La media de las notas es {sumaArray/arrayNotas.Length}");
 Console.WriteLine($"La nota más alta es {notaMayorArr}");
 Console.WriteLine($"La nota más baja es {notaMenorArr}");
-Console.WriteLine($"En total ha habido {numAprobados} aprobados y {numSuspensos} suspensos.");*/
+Console.WriteLine($"En total ha habido {numAprobados} aprobados y {numSuspensos} suspensos.");
 
 
 // Ejercicio 43 - Adivinar el número
-
 int secretNumber = 7;
-int numUser = 0;
+int numeroUser = 0;
 
 Console.WriteLine ("Adivina el número secreto: \n Por cada intento si fallas y el número es menor o mayor se mostrará un mensaje.\n Si lo aciertas será igual y se acabará el juego");
 
 
-while (numUser != secretNumber)
+while (numeroUser != secretNumber)
 {
     Console.Write("Introduce el número: ");
     numUser = int.Parse(Console.ReadLine() ?? "");
 
-    if (numUser < secretNumber)
+    if (numeroUser < secretNumber)
     {
-        Console.Write($"{numUser} es menor al número secreto\n");
+        Console.Write($"{numeroUser} es menor al número secreto\n");
         
     }
-    else if (numUser > secretNumber)
+    else if (numeroUser > secretNumber)
     {
-        Console.Write($"{numUser} es mayor que el número secreto\n");
+        Console.Write($"{numeroUser} es mayor que el número secreto\n");
         
     }
     else
@@ -832,3 +834,51 @@ while (numUser != secretNumber)
         Console.Write($"¡¡ HAS ACERTADO EL NÚMERO SECRETO QUE ERA {secretNumber}\n");
     }
 }
+
+
+// Ejercicio 44 - Menú completo 
+int opcionMenu = 0;
+int numIntroducido = 0;
+
+do
+{
+    Console.WriteLine("¿Qué quieres hacer (1. Introducir número | 2. Mostrar número | 3. Comprobar si es par | 4. Mostrar doble | 5. Salir)?: ");
+    opcionMenu = int.Parse(Console.ReadLine() ?? "");
+
+    switch (opcionMenu)
+    {
+        case 1:
+            Console.WriteLine("Introduce un número: ");
+            numIntroducido = int.Parse(Console.ReadLine() ?? "");
+            break;
+
+        case 2:
+            Console.WriteLine($"El número que has introducido es {numIntroducido}");
+            break;
+
+        case 3:
+            if(numIntroducido % 2 == 0)
+            {
+                Console.WriteLine($"El número que has introducido es par");
+            }
+            else
+            {
+                Console.WriteLine($"El número que has introducido es impar");
+            }
+
+            break;
+
+        case 4:
+            Console.WriteLine($"El doble del número que has introducido es {numIntroducido*2}");
+            break;
+
+        case 5:
+            Console.WriteLine("Programa terminado");
+            break;
+
+        default:
+            Console.WriteLine("Opción desconocida");
+            break;
+    }
+    
+}while(opcionMenu != 5);
