@@ -1,7 +1,7 @@
 ﻿// NIVEL 1 - IF
 
 // Ejercicio 1 - Mayor de edad
-/*Console.WriteLine("Introduce tu edad: ");
+Console.WriteLine("Introduce tu edad: ");
 int edad = int.Parse(Console.ReadLine() ?? "");
 
 if (edad >= 18)
@@ -736,14 +736,13 @@ switch (nivelElegido)
     default:
         Console.WriteLine("Nivel desconocido");
         break;
-}*/
+}
 
 
 // Ejercicio 41 - enum + switch expression
+Nivel nivelElegido2 = Nivel.Alto; // En una variable guardamos valor del enum en el archivo nivel40.cs
 
-Nivel nivelElegido = Nivel.Alto; // En una variable guardamos valor del enum en el archivo nivel40.cs
-
-string mensajeNivel = nivelElegido switch // Se hace un switch expression creando una variable con el mensaje
+string mensajeNivel = nivelElegido2 switch // Se hace un switch expression creando una variable con el mensaje
 
 {
     Nivel.Bajo => "Nivel bajo",
@@ -753,3 +752,53 @@ string mensajeNivel = nivelElegido switch // Se hace un switch expression creand
 };
 
 Console.WriteLine(mensajeNivel);
+
+
+// Ejercicio 42 - Analizador de notas
+int numNotas = 0;
+
+Console.WriteLine("¿Cuántas notas vas a introducir?: ");
+numNotas = int.Parse(Console.ReadLine() ?? "");
+
+decimal[] arrayNotas = new decimal[numNotas];
+
+for (int i = 0; i < arrayNotas.Length; i++)
+{
+    Console.WriteLine("Introduce una nota: ");
+    arrayNotas[i] = decimal.Parse(Console.ReadLine() ?? "");
+}
+
+decimal sumaArray = 0m;
+decimal notaMayorArr = 0m;
+decimal notaMenorArr = 11m;
+int numAprobados = 0;
+int numSuspensos = 0;
+
+for (int i = 0; i < arrayNotas.Length; i++)
+{
+    sumaArray += arrayNotas[i];
+
+    if (arrayNotas[i] > notaMayorArr)
+    {
+        notaMayorArr = arrayNotas[i];
+    }
+
+    if (arrayNotas[i] < notaMenorArr)
+    {
+        notaMenorArr = arrayNotas[i];
+    }
+
+    if (arrayNotas[i] >= 5m)
+    {
+        numAprobados++;
+    }
+    else
+    {
+        numSuspensos++;
+    }
+}
+
+Console.WriteLine($"La media de las notas es {sumaArray/arrayNotas.Length}");
+Console.WriteLine($"La nota más alta es {notaMayorArr}");
+Console.WriteLine($"La nota más baja es {notaMenorArr}");
+Console.WriteLine($"En total ha habido {numAprobados} aprobados y {numSuspensos} suspensos.");
