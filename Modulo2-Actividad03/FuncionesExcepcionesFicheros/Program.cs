@@ -1,7 +1,7 @@
 ﻿// BLOQUE 1 - FUNCIONES
 
 // Ejercicio 1 - Primera función
-static void MostrarMensaje()
+/*static void MostrarMensaje()
 {
     Console.WriteLine("Bienvenido al programa");
 }
@@ -214,3 +214,26 @@ else
     string ruta = Path.Combine("datos", "mensaje.txt");
     File.WriteAllText(ruta, "Hola desde C#");
 }
+
+
+// Ejercicio 15 - Leer y modificar un archivo
+
+// Leer un archivo
+
+string ruta2 = Path.Combine("datos", "mensaje.txt"); // Pasarle la ruta donde está el archivo
+string archivo = File.ReadAllText(ruta2); // Una vez obtenido el archivo, lo leemos y se guarda en la variable
+Console.WriteLine(archivo); // Mostrar por pantalla el contenido del archivo
+
+// Agregar contenido al archivo
+
+File.AppendAllText(ruta2, Environment.NewLine + "Adios desde C#"); // File.Appen
+
+Console.WriteLine(archivo);*/
+
+
+
+
+
+
+
+
