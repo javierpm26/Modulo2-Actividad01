@@ -1,7 +1,7 @@
 ﻿// NIVEL 1 - IF
 
 // Ejercicio 1 - Mayor de edad
-Console.WriteLine("Introduce tu edad: ");
+/*Console.WriteLine("Introduce tu edad: ");
 int edad = int.Parse(Console.ReadLine() ?? "");
 
 if (edad >= 18)
@@ -881,4 +881,79 @@ do
             break;
     }
     
-}while(opcionMenu != 5);
+}while(opcionMenu != 5); */
+
+// NIVEL 14 - RETO FINAL
+// Ejercicio 45 - Gestión de notas
+
+double[] notasFinales2 = { 7.5, 4.0, 8.5, 6.0, 3.5, 9.0};
+
+double mediaNotas = 0.0;
+double notaMayor = notasFinales2[0];
+double notaMenor = notasFinales2[0];
+int numeroAprobados = 0;
+int numeroSuspensos = 0;
+bool mediaMayorIgual5 = false;
+
+
+
+foreach (double notas in notasFinales2)
+{
+    Console.WriteLine(notas); // Mostrar todas las notas
+    mediaNotas += (notas) / notasFinales2.Length;
+
+    if (notas > notaMayor)
+    {
+        notaMayor = notas;
+    }
+   
+   if (notas < notaMenor)
+    {
+        notaMenor = notas;
+    }
+
+    if (notas >= 5)
+    {
+        numeroAprobados++;
+    }
+    else
+    {
+        numeroSuspensos++;
+    }
+
+    if (mediaNotas >= 5)
+    {
+        mediaMayorIgual5 = true;
+    }
+
+   
+}
+
+// Mostrar resultados de las operaciones del bucle
+Console.WriteLine($"Media de todas las notas {mediaNotas}"); // Mostrar la media de las notas
+Console.WriteLine($"Nota mayor: {notaMayor}");
+Console.WriteLine($"Nota menor: {notaMenor}");
+Console.WriteLine($"Número de aprobados: {numeroAprobados}");
+Console.WriteLine($"Número de suspendidos: {numeroSuspensos}");
+Console.WriteLine($"Media del grupo mayor o igual a 5: {mediaMayorIgual5}");
+
+// Pedir un numero por teclado al usuario y mostrar el mensaje de la switch expression
+
+Console.WriteLine("Dí un número:");
+int opcionMedia = int.Parse(Console.ReadLine() ?? "");
+
+
+string mensajeMedia = opcionMedia switch // Crear la switch expression
+{
+    1 => "Media Alta",
+    2 => "Media Baja",
+    _ => "Desconocido??"
+};
+
+Console.Write($"{mensajeMedia} ");
+
+
+
+
+
+
