@@ -77,7 +77,7 @@ static void Cambiar2(ref int numero2)
 
 }
 Cambiar2(ref numero2);
-Console.WriteLine($"Numero aquí vale {numero2}");*/
+Console.WriteLine($"Numero aquí vale {numero2}");
 
 
 // Ejercicio 8 - out
@@ -94,4 +94,19 @@ static void Cambiar3(int numero3, out int nDoble, out int nTriple)
 
 }
 Cambiar3(numero3, out int nDoble, out int nTriple);
-Console.WriteLine(numero3);
+Console.WriteLine(numero3);*/
+
+
+// Ejercicio 9 - Recursividad
+
+static void cuentaAtras(int numero)
+{
+    if (numero <= 0)
+    {
+        return;
+    }
+    Console.WriteLine(numero);
+    cuentaAtras(numero - 1);
+}
+
+cuentaAtras(10);
