@@ -106,7 +106,8 @@ static void cuentaAtras(int numero)
         return;
     }
     Console.WriteLine(numero);
-    cuentaAtras(numero - 1);
+    cuentaAtras(numero -1);
 }
 
-cuentaAtras(10);
+cuentaAtras(20);
+
