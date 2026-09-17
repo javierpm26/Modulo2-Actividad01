@@ -1,7 +1,7 @@
 ﻿// BLOQUE 1 - FUNCIONES
 
 // Ejercicio 1 - Primera función
-/*static void MostrarMensaje()
+static void MostrarMensaje()
 {
     Console.WriteLine("Bienvenido al programa");
 }
@@ -116,7 +116,6 @@ cuentaAtras(20);
 
 // Ejercicio 10 - Detectar una excepción
 string letras = "abc";
-
 try
 {
     int numConvertido = int.Parse(letras);
@@ -124,12 +123,10 @@ try
 catch
 {
     Console.WriteLine("No se puede convertir un tipo string a int.");
-}*/
-
+}
 
 
 // Ejercicio 11 - Introducción segura de datos
-
 try
 {
     Console.WriteLine("Introduce tu edad: ");
@@ -147,4 +144,26 @@ finally
 }
 
 
+// Ejercicio 12 - Validación con throw
+int edad = -5;
 
+static void ValidarEdad(int edad)
+{
+    if (edad > 0)
+    {
+        Console.WriteLine("La edad es positiva.");
+    }
+    else
+    {
+        throw new Exception("Error: La edad no puede ser negativa.");
+    }
+}
+
+try
+{
+    ValidarEdad(edad);
+}
+catch(Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
