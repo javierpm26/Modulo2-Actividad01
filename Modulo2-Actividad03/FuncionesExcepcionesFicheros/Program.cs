@@ -1,7 +1,7 @@
 ﻿// BLOQUE 1 - FUNCIONES
 
 // Ejercicio 1 - Primera función
-static void MostrarMensaje()
+/*static void MostrarMensaje()
 {
     Console.WriteLine("Bienvenido al programa");
 }
@@ -166,4 +166,37 @@ try
 catch(Exception ex)
 {
     Console.WriteLine(ex.Message);
+}*/
+
+
+// Ejercicio 13 - finally
+
+static void validadEdad2(int edad)
+{
+    if (edad > 0)
+    {
+        Console.WriteLine($"Ok, tu edad es {edad}");
+    }else
+    {
+        throw new Exception("Error: Tu edad no puede ser un numero negativo");
+    }
 }
+
+try
+{
+    Console.WriteLine("Introduce tu edad:");
+    int edad = int.Parse(Console.ReadLine() ?? "");
+    validadEdad2(edad);
+
+}
+catch (Exception excepcion)
+{
+    Console.WriteLine(excepcion.Message);
+}
+
+finally
+{
+    Console.WriteLine("El programa se ha terminado");
+}
+
+
