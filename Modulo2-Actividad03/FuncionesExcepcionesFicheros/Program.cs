@@ -94,11 +94,10 @@ static void Cambiar3(int numero3, out int nDoble, out int nTriple)
 
 }
 Cambiar3(numero3, out int nDoble, out int nTriple);
-Console.WriteLine(numero3);*/
+Console.WriteLine(numero3);
 
 
 // Ejercicio 9 - Recursividad
-
 static void cuentaAtras(int numero)
 {
     if (numero <= 0)
@@ -109,5 +108,20 @@ static void cuentaAtras(int numero)
     cuentaAtras(numero -1);
 }
 
-cuentaAtras(20);
+cuentaAtras(20);*/
 
+
+
+// BLOQUE 3 - EXCEPCIONES Y VALIDACION
+
+// Ejercicio 10 - Detectar una excepción
+string letras = "abc";
+
+try
+{
+    int numConvertido = int.Parse(letras);
+}
+catch
+{
+    Console.WriteLine("No se puede convertir un tipo string a int.");
+}
