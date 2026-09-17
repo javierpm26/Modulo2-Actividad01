@@ -1,7 +1,7 @@
 ﻿// NIVEL 1 - IF
 
 // Ejercicio 1 - Mayor de edad
-Console.WriteLine("Introduce tu edad: ");
+/*Console.WriteLine("Introduce tu edad: ");
 int edad = int.Parse(Console.ReadLine() ?? "");
 
 if (edad >= 18)
@@ -801,4 +801,34 @@ for (int i = 0; i < arrayNotas.Length; i++)
 Console.WriteLine($"La media de las notas es {sumaArray/arrayNotas.Length}");
 Console.WriteLine($"La nota más alta es {notaMayorArr}");
 Console.WriteLine($"La nota más baja es {notaMenorArr}");
-Console.WriteLine($"En total ha habido {numAprobados} aprobados y {numSuspensos} suspensos.");
+Console.WriteLine($"En total ha habido {numAprobados} aprobados y {numSuspensos} suspensos.");*/
+
+
+// Ejercicio 43 - Adivinar el número
+
+int secretNumber = 7;
+int numUser = 0;
+
+Console.WriteLine ("Adivina el número secreto: \n Por cada intento si fallas y el número es menor o mayor se mostrará un mensaje.\n Si lo aciertas será igual y se acabará el juego");
+
+
+while (numUser != secretNumber)
+{
+    Console.Write("Introduce el número: ");
+    numUser = int.Parse(Console.ReadLine() ?? "");
+
+    if (numUser < secretNumber)
+    {
+        Console.Write($"{numUser} es menor al número secreto\n");
+        
+    }
+    else if (numUser > secretNumber)
+    {
+        Console.Write($"{numUser} es mayor que el número secreto\n");
+        
+    }
+    else
+    {
+        Console.Write($"¡¡ HAS ACERTADO EL NÚMERO SECRETO QUE ERA {secretNumber}\n");
+    }
+}
