@@ -231,6 +231,24 @@ File.AppendAllText(ruta2, Environment.NewLine + "Adios desde C#"); // File.Appen
 Console.WriteLine(archivo);*/
 
 
+// Ejercicio 16 - CSV
+
+string rutaArchivoCSV = Path.Combine("datos", "personas.csv");
+
+string[] lineasArchivoCSV = File.ReadAllLines(rutaArchivoCSV);
+
+string[] datosPersonas = new string[0];
+
+foreach (string linea in lineasArchivoCSV)
+{
+    Console.WriteLine(linea);
+    datosPersonas = linea.Split(';');
+    Console.WriteLine(linea);
+}
+
+
+
+
 
 
 
