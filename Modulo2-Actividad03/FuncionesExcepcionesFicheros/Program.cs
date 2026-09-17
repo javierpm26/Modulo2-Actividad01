@@ -108,7 +108,7 @@ static void cuentaAtras(int numero)
     cuentaAtras(numero -1);
 }
 
-cuentaAtras(20);*/
+cuentaAtras(20);
 
 
 
@@ -124,4 +124,27 @@ try
 catch
 {
     Console.WriteLine("No se puede convertir un tipo string a int.");
+}*/
+
+
+
+// Ejercicio 11 - Introducción segura de datos
+
+try
+{
+    Console.WriteLine("Introduce tu edad: ");
+    int edad = int.Parse(Console.ReadLine() ?? "");
+    Console.WriteLine($"Ok, tu edad es {edad}");
+
 }
+catch
+{
+    Console.WriteLine("Error: Se ha introducido un dato de tipo String, tienes que introducir tu edad con un número entero INT");
+}
+finally
+{
+    Console.WriteLine("Operación terminada");
+}
+
+
+
