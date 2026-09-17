@@ -8,3 +8,13 @@ static void MostrarMensaje()
 
 MostrarMensaje();
 
+
+// Ejercicio 2 - Parámetros
+static void saludar(string nombre)
+{
+    Console.WriteLine($"Hola {nombre}");
+}
+
+saludar("Andrea");
+saludar("Javier");
+
