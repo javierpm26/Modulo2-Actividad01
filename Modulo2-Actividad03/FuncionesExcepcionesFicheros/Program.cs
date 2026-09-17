@@ -237,13 +237,26 @@ string rutaArchivoCSV = Path.Combine("datos", "personas.csv");
 
 string[] lineasArchivoCSV = File.ReadAllLines(rutaArchivoCSV);
 
-string[] datosPersonas = new string[0];
+string[] datosPersonas = new string[0]; // Inicializamos el array de datosPersonas como un array vacío
+
+Console.WriteLine($"ARCHIVO {rutaArchivoCSV}: \n"); // Para mostrar un encabezado con el nombre del archivo CSV que se está leyendo
 
 foreach (string linea in lineasArchivoCSV)
 {
-    Console.WriteLine(linea);
+    
+    Console.WriteLine($"Línea: {linea}"); // Mostrar la línea leída del archivo CSV
     datosPersonas = linea.Split(';');
-    Console.WriteLine(linea);
+    
+
+
+
+    // Mostrar los datos de la primera persona del archivo CSV
+    Console.WriteLine($"Nombre: {datosPersonas[0]}"); // Obtener el primer elemento del array que es el nombre
+    Console.WriteLine($"Edad: {datosPersonas[1]}"); // Obtener el segundo elemento del array que es la edad
+    Console.WriteLine($"Ciudad: {datosPersonas[2]}"); // Obtener el tercer elemento del array que es la ciudad
+
+    Console.WriteLine("-----------------------------");
+
 }
 
 
